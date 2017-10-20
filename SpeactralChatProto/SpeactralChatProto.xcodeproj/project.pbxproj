@@ -12,8 +12,8 @@
 		04A9FE811F9A6F91007E64D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A9FE7F1F9A6F91007E64D8 /* Main.storyboard */; };
 		04A9FE831F9A6F91007E64D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A9FE821F9A6F91007E64D8 /* Assets.xcassets */; };
 		04A9FE861F9A6F91007E64D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A9FE841F9A6F91007E64D8 /* LaunchScreen.storyboard */; };
-		04A9FE8E1F9A8340007E64D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04A9FE8D1F9A8340007E64D8 /* GoogleService-Info.plist */; };
 		498B31F1188EA8D8EC94BAE9 /* Pods_SpeactralChatProto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F917041AA29D93E3BC2EC264 /* Pods_SpeactralChatProto.framework */; };
+		52F11CF11F9AADC000C3936E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52F11CF01F9AADC000C3936E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +24,7 @@
 		04A9FE821F9A6F91007E64D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A9FE851F9A6F91007E64D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04A9FE871F9A6F91007E64D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04A9FE8D1F9A8340007E64D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		52F11CF01F9AADC000C3936E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		93F8B6AF278BEC436768491C /* Pods-SpeactralChatProto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeactralChatProto.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto.release.xcconfig"; sourceTree = "<group>"; };
 		EE3B6017C002FDDC474EF8DC /* Pods-SpeactralChatProto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeactralChatProto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto.debug.xcconfig"; sourceTree = "<group>"; };
 		F917041AA29D93E3BC2EC264 /* Pods_SpeactralChatProto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeactralChatProto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,10 +66,10 @@
 				04A9FE7B1F9A6F91007E64D8 /* AppDelegate.swift */,
 				04A9FE7D1F9A6F91007E64D8 /* ViewController.swift */,
 				04A9FE7F1F9A6F91007E64D8 /* Main.storyboard */,
-				04A9FE8D1F9A8340007E64D8 /* GoogleService-Info.plist */,
 				04A9FE821F9A6F91007E64D8 /* Assets.xcassets */,
 				04A9FE841F9A6F91007E64D8 /* LaunchScreen.storyboard */,
 				04A9FE871F9A6F91007E64D8 /* Info.plist */,
+				52F11CF01F9AADC000C3936E /* GoogleService-Info.plist */,
 			);
 			path = SpeactralChatProto;
 			sourceTree = "<group>";
@@ -154,7 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A9FE861F9A6F91007E64D8 /* LaunchScreen.storyboard in Resources */,
-				04A9FE8E1F9A8340007E64D8 /* GoogleService-Info.plist in Resources */,
+				52F11CF11F9AADC000C3936E /* GoogleService-Info.plist in Resources */,
 				04A9FE831F9A6F91007E64D8 /* Assets.xcassets in Resources */,
 				04A9FE811F9A6F91007E64D8 /* Main.storyboard in Resources */,
 			);
