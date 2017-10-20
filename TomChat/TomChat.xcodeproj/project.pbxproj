@@ -356,6 +356,7 @@
 				CODE_SIGN_ENTITLEMENTS = TomChat/TomChat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5YWXH4F4SW;
 				INFOPLIST_FILE = TomChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.siliconspectra.TomChat;
@@ -372,6 +373,7 @@
 				CODE_SIGN_ENTITLEMENTS = TomChat/TomChat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5YWXH4F4SW;
 				INFOPLIST_FILE = TomChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.siliconspectra.TomChat;
