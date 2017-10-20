@@ -15,13 +15,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var button: UIButton!
     
-//    var ref: DatabaseReference?
     
-    @IBAction func handleSend(sender: AnyObject) {
+    @IBAction func updateSend(_ sender: Any) {
         let ref: DatabaseReference!
         ref = Database.database().reference()
-        ref.child("users").child("user").setValue("Hermiona")
-        
+    ref.child("users").child("user").setValue(textField.text)
     }
     
     override func viewDidLoad() {
