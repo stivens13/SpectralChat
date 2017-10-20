@@ -8,16 +8,19 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 
 class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var button: UIButton!
     
+//    var ref: DatabaseReference?
+    
     @IBAction func handleSend(sender: AnyObject) {
         let ref: DatabaseReference!
         ref = Database.database().reference()
-        ref.child("message").setValue(textField.text)
+        ref.child("users").child("user").setValue("Hermiona")
         
     }
     
