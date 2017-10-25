@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "2so-Zp-H2k"; */
+"2so-Zp-H2k.normalTitle" = "Send";
+
+/* Class = "UILabel"; text = "Username"; ObjectID = "Cwv-tY-cAX"; */
+"Cwv-tY-cAX.text" = "Username";
+
+/* Class = "UITextField"; text = "Type me"; ObjectID = "GHj-VK-bGE"; */
+"GHj-VK-bGE.text" = "Type me";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "a6i-qL-lt2"; */
+"a6i-qL-lt2.text" = "Password";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "jL1-kG-2gb"; */
+"jL1-kG-2gb.normalTitle" = "Login";
+
+/* Class = "UILabel"; text = "TomChat"; ObjectID = "mqc-Fg-mNX"; */
+"mqc-Fg-mNX.text" = "TomChat";
+
+/* Class = "UILabel"; text = "What do I say?"; ObjectID = "oYz-2V-VUk"; */
+"oYz-2V-VUk.text" = "What do I say?";

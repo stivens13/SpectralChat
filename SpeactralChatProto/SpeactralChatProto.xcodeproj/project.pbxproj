@@ -25,6 +25,7 @@
 		04A9FE851F9A6F91007E64D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04A9FE871F9A6F91007E64D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52F11CF01F9AADC000C3936E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		52F11CF31FA0044700C3936E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		93F8B6AF278BEC436768491C /* Pods-SpeactralChatProto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeactralChatProto.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto.release.xcconfig"; sourceTree = "<group>"; };
 		EE3B6017C002FDDC474EF8DC /* Pods-SpeactralChatProto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeactralChatProto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto.debug.xcconfig"; sourceTree = "<group>"; };
 		F917041AA29D93E3BC2EC264 /* Pods_SpeactralChatProto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeactralChatProto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +121,9 @@
 		04A9FE701F9A6F91007E64D8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					Username,
+				);
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Nikita Voloshenko";
@@ -237,6 +241,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				04A9FE801F9A6F91007E64D8 /* Base */,
+				52F11CF31FA0044700C3936E /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

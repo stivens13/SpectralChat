@@ -19,15 +19,12 @@ class ViewController: UIViewController {
     @IBAction func updateSend(_ sender: Any) {
         let ref: DatabaseReference!
         ref = Database.database().reference()
-    ref.child("users").child("user").setValue(textField.text)
+        ref.child("users").child("user").setValue(textField.text)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let ref: DatabaseReference!
-//        let ref = Database.database().reference()
-//        ref.observeEventType
         // Do any additional setup after loading the view, typically from a nib.
     }
 
