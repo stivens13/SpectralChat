@@ -6,6 +6,8 @@ target 'SpeactralChatProto' do
   use_frameworks!
 pod 'Firebase'
 pod 'Firebase/Database'
+pod 'Firebase/Auth'
+pod 'JSQMessagesViewController'
   # Pods for SpeactralChatProto
 
 end

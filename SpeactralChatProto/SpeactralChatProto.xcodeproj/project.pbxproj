@@ -14,6 +14,7 @@
 		04A9FE861F9A6F91007E64D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A9FE841F9A6F91007E64D8 /* LaunchScreen.storyboard */; };
 		498B31F1188EA8D8EC94BAE9 /* Pods_SpeactralChatProto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F917041AA29D93E3BC2EC264 /* Pods_SpeactralChatProto.framework */; };
 		52F11CF11F9AADC000C3936E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52F11CF01F9AADC000C3936E /* GoogleService-Info.plist */; };
+		52F11CF51FA0226400C3936E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F11CF41FA0226400C3936E /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		04A9FE871F9A6F91007E64D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52F11CF01F9AADC000C3936E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		52F11CF31FA0044700C3936E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		52F11CF41FA0226400C3936E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		93F8B6AF278BEC436768491C /* Pods-SpeactralChatProto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeactralChatProto.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto.release.xcconfig"; sourceTree = "<group>"; };
 		EE3B6017C002FDDC474EF8DC /* Pods-SpeactralChatProto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeactralChatProto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto.debug.xcconfig"; sourceTree = "<group>"; };
 		F917041AA29D93E3BC2EC264 /* Pods_SpeactralChatProto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeactralChatProto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +73,7 @@
 				04A9FE841F9A6F91007E64D8 /* LaunchScreen.storyboard */,
 				04A9FE871F9A6F91007E64D8 /* Info.plist */,
 				52F11CF01F9AADC000C3936E /* GoogleService-Info.plist */,
+				52F11CF41FA0226400C3936E /* LoginViewController.swift */,
 			);
 			path = SpeactralChatProto;
 			sourceTree = "<group>";
@@ -192,13 +195,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -229,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52F11CF51FA0226400C3936E /* LoginViewController.swift in Sources */,
 				04A9FE7E1F9A6F91007E64D8 /* ViewController.swift in Sources */,
 				04A9FE7C1F9A6F91007E64D8 /* AppDelegate.swift in Sources */,
 			);
