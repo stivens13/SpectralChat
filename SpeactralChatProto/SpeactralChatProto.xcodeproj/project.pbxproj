@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0411770B1FA29E69006A0901 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0411770A1FA29E69006A0901 /* GoogleService-Info.plist */; };
 		04A9FE7C1F9A6F91007E64D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9FE7B1F9A6F91007E64D8 /* AppDelegate.swift */; };
 		04A9FE7E1F9A6F91007E64D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9FE7D1F9A6F91007E64D8 /* ViewController.swift */; };
 		04A9FE811F9A6F91007E64D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A9FE7F1F9A6F91007E64D8 /* Main.storyboard */; };
 		04A9FE831F9A6F91007E64D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A9FE821F9A6F91007E64D8 /* Assets.xcassets */; };
 		04A9FE861F9A6F91007E64D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A9FE841F9A6F91007E64D8 /* LaunchScreen.storyboard */; };
-		498B31F1188EA8D8EC94BAE9 /* Pods_SpeactralChatProto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F917041AA29D93E3BC2EC264 /* Pods_SpeactralChatProto.framework */; };
-		52F11CF11F9AADC000C3936E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52F11CF01F9AADC000C3936E /* GoogleService-Info.plist */; };
-		52F11CF51FA0226400C3936E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F11CF41FA0226400C3936E /* LoginViewController.swift */; };
+		04FD170D1FA3AC5200AF596F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FD170C1FA3AC5200AF596F /* LoginViewController.swift */; };
+		C4DFB252BE084181527C1BFA /* Pods_SpeactralChatProto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06A0CD7C29A693F8CA284A2 /* Pods_SpeactralChatProto.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0411770A1FA29E69006A0901 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04A9FE781F9A6F91007E64D8 /* SpeactralChatProto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeactralChatProto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A9FE7B1F9A6F91007E64D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04A9FE7D1F9A6F91007E64D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,12 +26,11 @@
 		04A9FE821F9A6F91007E64D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A9FE851F9A6F91007E64D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04A9FE871F9A6F91007E64D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52F11CF01F9AADC000C3936E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04FD170C1FA3AC5200AF596F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1725FE2B569E940722C5FE6C /* Pods-SpeactralChatProto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeactralChatProto.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto.release.xcconfig"; sourceTree = "<group>"; };
 		52F11CF31FA0044700C3936E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		52F11CF41FA0226400C3936E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		93F8B6AF278BEC436768491C /* Pods-SpeactralChatProto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeactralChatProto.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto.release.xcconfig"; sourceTree = "<group>"; };
-		EE3B6017C002FDDC474EF8DC /* Pods-SpeactralChatProto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeactralChatProto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto.debug.xcconfig"; sourceTree = "<group>"; };
-		F917041AA29D93E3BC2EC264 /* Pods_SpeactralChatProto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeactralChatProto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A073BB0F2EB5073F36A3349 /* Pods-SpeactralChatProto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeactralChatProto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto.debug.xcconfig"; sourceTree = "<group>"; };
+		B06A0CD7C29A693F8CA284A2 /* Pods_SpeactralChatProto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeactralChatProto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				498B31F1188EA8D8EC94BAE9 /* Pods_SpeactralChatProto.framework in Frameworks */,
+				C4DFB252BE084181527C1BFA /* Pods_SpeactralChatProto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,8 +50,8 @@
 			children = (
 				04A9FE7A1F9A6F91007E64D8 /* SpeactralChatProto */,
 				04A9FE791F9A6F91007E64D8 /* Products */,
-				9ED36A89122F0AA4918EAB93 /* Pods */,
-				ECB3DDD40AE5756123FD08A2 /* Frameworks */,
+				84123EA8409FE7A10D618A17 /* Pods */,
+				2259A8458671B91947C7A043 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,27 +72,27 @@
 				04A9FE821F9A6F91007E64D8 /* Assets.xcassets */,
 				04A9FE841F9A6F91007E64D8 /* LaunchScreen.storyboard */,
 				04A9FE871F9A6F91007E64D8 /* Info.plist */,
-				52F11CF01F9AADC000C3936E /* GoogleService-Info.plist */,
-				52F11CF41FA0226400C3936E /* LoginViewController.swift */,
+				0411770A1FA29E69006A0901 /* GoogleService-Info.plist */,
+				04FD170C1FA3AC5200AF596F /* LoginViewController.swift */,
 			);
 			path = SpeactralChatProto;
 			sourceTree = "<group>";
 		};
-		9ED36A89122F0AA4918EAB93 /* Pods */ = {
+		2259A8458671B91947C7A043 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EE3B6017C002FDDC474EF8DC /* Pods-SpeactralChatProto.debug.xcconfig */,
-				93F8B6AF278BEC436768491C /* Pods-SpeactralChatProto.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		ECB3DDD40AE5756123FD08A2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F917041AA29D93E3BC2EC264 /* Pods_SpeactralChatProto.framework */,
+				B06A0CD7C29A693F8CA284A2 /* Pods_SpeactralChatProto.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84123EA8409FE7A10D618A17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A073BB0F2EB5073F36A3349 /* Pods-SpeactralChatProto.debug.xcconfig */,
+				1725FE2B569E940722C5FE6C /* Pods-SpeactralChatProto.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,12 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04A9FE8A1F9A6F91007E64D8 /* Build configuration list for PBXNativeTarget "SpeactralChatProto" */;
 			buildPhases = (
-				1D140D1BB17DB25D06906181 /* [CP] Check Pods Manifest.lock */,
+				9920641A8260C512DC3EC239 /* [CP] Check Pods Manifest.lock */,
 				04A9FE741F9A6F91007E64D8 /* Sources */,
 				04A9FE751F9A6F91007E64D8 /* Frameworks */,
 				04A9FE761F9A6F91007E64D8 /* Resources */,
-				581DDC985F060DA2E3017BE2 /* [CP] Embed Pods Frameworks */,
-				99DF2225B9E49C479F1CF2FA /* [CP] Copy Pods Resources */,
+				24BC00EEA7DB2F3013D2F85F /* [CP] Embed Pods Frameworks */,
+				5E0591E040255B2BE020B1F1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,7 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A9FE861F9A6F91007E64D8 /* LaunchScreen.storyboard in Resources */,
-				52F11CF11F9AADC000C3936E /* GoogleService-Info.plist in Resources */,
+				0411770B1FA29E69006A0901 /* GoogleService-Info.plist in Resources */,
 				04A9FE831F9A6F91007E64D8 /* Assets.xcassets in Resources */,
 				04A9FE811F9A6F91007E64D8 /* Main.storyboard in Resources */,
 			);
@@ -170,7 +170,52 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1D140D1BB17DB25D06906181 /* [CP] Check Pods Manifest.lock */ = {
+		24BC00EEA7DB2F3013D2F85F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E0591E040255B2BE020B1F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9920641A8260C512DC3EC239 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -188,49 +233,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		581DDC985F060DA2E3017BE2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
-				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		99DF2225B9E49C479F1CF2FA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -238,7 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52F11CF51FA0226400C3936E /* LoginViewController.swift in Sources */,
+				04FD170D1FA3AC5200AF596F /* LoginViewController.swift in Sources */,
 				04A9FE7E1F9A6F91007E64D8 /* ViewController.swift in Sources */,
 				04A9FE7C1F9A6F91007E64D8 /* AppDelegate.swift in Sources */,
 			);
@@ -376,14 +378,15 @@
 		};
 		04A9FE8B1F9A6F91007E64D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE3B6017C002FDDC474EF8DC /* Pods-SpeactralChatProto.debug.xcconfig */;
+			baseConfigurationReference = 5A073BB0F2EB5073F36A3349 /* Pods-SpeactralChatProto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5YWXH4F4SW;
 				INFOPLIST_FILE = SpeactralChatProto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = siliconspectra.SpeactralChatProto;
+				PRODUCT_BUNDLE_IDENTIFIER = SpeactralChatProto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -392,14 +395,15 @@
 		};
 		04A9FE8C1F9A6F91007E64D8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93F8B6AF278BEC436768491C /* Pods-SpeactralChatProto.release.xcconfig */;
+			baseConfigurationReference = 1725FE2B569E940722C5FE6C /* Pods-SpeactralChatProto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5YWXH4F4SW;
 				INFOPLIST_FILE = SpeactralChatProto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = siliconspectra.SpeactralChatProto;
+				PRODUCT_BUNDLE_IDENTIFIER = SpeactralChatProto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

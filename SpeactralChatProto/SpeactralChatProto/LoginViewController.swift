@@ -2,9 +2,11 @@
 //  LoginViewController.swift
 //  SpeactralChatProto
 //
-//  Created by John Mai on 10/24/17.
+//  Created by Nikita Voloshenko on 10/27/17.
 //  Copyright © 2017 Nikita Voloshenko. All rights reserved.
 //
+
+import UIKit
 
 import Foundation
 import UIKit
@@ -15,6 +17,17 @@ class LoginViewController:UIViewController {
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
     @IBAction func loginAction(_send: AnyObject) {
         //check if it is empty
         if userNameTextField.text == "" {
@@ -22,14 +35,14 @@ class LoginViewController:UIViewController {
             let action = UIAlertAction(title: "ok", style: .cancel, handler: nil)
             alert.addAction(action)
             present(alert, animated: true, completion: nil)
-        //if not empty, then check the credentials
+            //if not empty, then check the credentials
         } else {
             //FIRAuth has been renamed to Auth
             Auth.auth().createUser(withEmail: userNameTextField.text!, password: passwordTextField.text!) {
                 (user,error) in
                 if error == nil {
                     print("Login successful")
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Message")
                     self.present(vc!, animated: true, completion: nil)
                 } else {
                     let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
@@ -41,3 +54,4 @@ class LoginViewController:UIViewController {
         }
     }
 }
+
