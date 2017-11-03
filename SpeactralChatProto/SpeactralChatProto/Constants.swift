@@ -7,3 +7,25 @@
 //
 
 import Foundation
+import Firebase
+
+class Constants {
+    static let CONTACTS = "Contacts";
+    static let MESSAGES = "Messages";
+    static let MEDIA_MESSAGES = "Media_Messages";
+    static let IMAGE_STORAGE = "Image_Storage";
+    static let VIDEO_STORAGE = "Video_Storage";
+    
+    static let Email = "email";
+    static let Password = "password";
+    static let Data = "data";
+    
+    //messages
+    
+    static let TEXT = "text";
+    static let Sender_ID = "sender_id";
+    static let Sender_Name = "sender_name";
+    static let URL = "url";
+    
+    
+}

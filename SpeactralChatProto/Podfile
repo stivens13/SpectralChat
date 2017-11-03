@@ -10,6 +10,7 @@ pod 'Firebase/Auth'
 pod 'JSQMessagesViewController'
 pod 'FirebaseInstanceID'
 pod 'FirebaseMessaging'
+pod 'FirebaseStorage'
   # Pods for SpeactralChatProto
 
 end

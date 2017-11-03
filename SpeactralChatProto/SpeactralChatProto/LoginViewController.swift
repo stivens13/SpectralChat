@@ -12,6 +12,7 @@ import Foundation
 import UIKit
 import Firebase
 import FirebaseAuth
+import JSQMessagesViewController
 
 class LoginViewController:UIViewController {
     @IBOutlet weak var userNameTextField: UITextField!
@@ -44,6 +45,7 @@ class LoginViewController:UIViewController {
                     print("Login successful")
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "Message")
                     self.present(vc!, animated: true, completion: nil)
+                    
                 } else {
                     let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                     let action = UIAlertAction(title: "Success", style: .cancel, handler: nil)
