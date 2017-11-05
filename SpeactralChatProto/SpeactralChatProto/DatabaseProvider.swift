@@ -40,8 +40,18 @@ class DatabaseProvider {
     var storageRef: StorageReference {
         return Storage.storage().reference(forURL: "https://ios-spectral.firebaseio.com/");
     }
+    var imageRef: StorageReference {
+        return storageRef.child(Constants.IMAGE_STORAGE);
+    }
     
+    var videoStorage: StorageReference {
+        return storageRef.child(Constants.IMAGE_STORAGE);
+    }
     
+    func saveInfo(withID: String, email: String, password: String) {
+        let data: Dictionary<String,Any> = [Constants.EMAIL: email, Constants.PASSWORD: password];
+        contactRef.child(withID).setValue(data);
+    }
     
     
 

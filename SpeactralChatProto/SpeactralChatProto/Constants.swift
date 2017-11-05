@@ -16,9 +16,9 @@ class Constants {
     static let IMAGE_STORAGE = "Image_Storage";
     static let VIDEO_STORAGE = "Video_Storage";
     
-    static let Email = "email";
-    static let Password = "password";
-    static let Data = "data";
+    static let EMAIL = "email";
+    static let PASSWORD = "password";
+    static let DATA = "data";
     
     //messages
     
