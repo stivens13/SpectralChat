@@ -83,11 +83,19 @@ class LoginViewController:UIViewController {
             Auth.auth().createUser(withEmail: userNameTextField.text!, password: passwordTextField.text!) {
                 (user,error) in
                 if error == nil {
-                    print("Successful")
+                    print("Signup successful")
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Message")
+                    self.present(vc!, animated: true, completion: nil)
+
                 } else {
-                    print("error")
+                    let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                    let action = UIAlertAction(title: "Success", style: .cancel, handler: nil)
+                    alert.addAction(action)
+                    self.present(alert,animated: true, completion: nil)
                 }
             }
+                
+            
         }
     }
     
