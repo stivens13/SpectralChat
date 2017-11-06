@@ -13,10 +13,10 @@
 		04A9FE831F9A6F91007E64D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A9FE821F9A6F91007E64D8 /* Assets.xcassets */; };
 		04A9FE861F9A6F91007E64D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A9FE841F9A6F91007E64D8 /* LaunchScreen.storyboard */; };
 		04FD170D1FA3AC5200AF596F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FD170C1FA3AC5200AF596F /* LoginViewController.swift */; };
-		52D7E66D1FABF750003536DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52D7E66C1FABF750003536DC /* GoogleService-Info.plist */; };
 		52D7E6701FABFB4E003536DC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D7E66F1FABFB4E003536DC /* Constants.swift */; };
 		52D7E6721FABFD14003536DC /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D7E6711FABFD14003536DC /* ChatViewController.swift */; };
 		52D7E6741FAC62CE003536DC /* DatabaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D7E6731FAC62CE003536DC /* DatabaseProvider.swift */; };
+		52D7E6761FB02228003536DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52D7E6751FB02228003536DC /* GoogleService-Info.plist */; };
 		C4DFB252BE084181527C1BFA /* Pods_SpeactralChatProto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06A0CD7C29A693F8CA284A2 /* Pods_SpeactralChatProto.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,11 +30,11 @@
 		04A9FE871F9A6F91007E64D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04FD170C1FA3AC5200AF596F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1725FE2B569E940722C5FE6C /* Pods-SpeactralChatProto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeactralChatProto.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto.release.xcconfig"; sourceTree = "<group>"; };
-		52D7E66C1FABF750003536DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		52D7E66E1FABF8E1003536DC /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		52D7E66F1FABFB4E003536DC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		52D7E6711FABFD14003536DC /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		52D7E6731FAC62CE003536DC /* DatabaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProvider.swift; sourceTree = "<group>"; };
+		52D7E6751FB02228003536DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		52F11CF31FA0044700C3936E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		5A073BB0F2EB5073F36A3349 /* Pods-SpeactralChatProto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeactralChatProto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto.debug.xcconfig"; sourceTree = "<group>"; };
 		B06A0CD7C29A693F8CA284A2 /* Pods_SpeactralChatProto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeactralChatProto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,10 +80,10 @@
 				04A9FE821F9A6F91007E64D8 /* Assets.xcassets */,
 				04A9FE841F9A6F91007E64D8 /* LaunchScreen.storyboard */,
 				04A9FE871F9A6F91007E64D8 /* Info.plist */,
-				52D7E66C1FABF750003536DC /* GoogleService-Info.plist */,
 				04FD170C1FA3AC5200AF596F /* LoginViewController.swift */,
 				52D7E66F1FABFB4E003536DC /* Constants.swift */,
 				52D7E6711FABFD14003536DC /* ChatViewController.swift */,
+				52D7E6751FB02228003536DC /* GoogleService-Info.plist */,
 				52D7E6731FAC62CE003536DC /* DatabaseProvider.swift */,
 			);
 			path = SpeactralChatProto;
@@ -172,7 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A9FE861F9A6F91007E64D8 /* LaunchScreen.storyboard in Resources */,
-				52D7E66D1FABF750003536DC /* GoogleService-Info.plist in Resources */,
+				52D7E6761FB02228003536DC /* GoogleService-Info.plist in Resources */,
 				04A9FE831F9A6F91007E64D8 /* Assets.xcassets in Resources */,
 				04A9FE811F9A6F91007E64D8 /* Main.storyboard in Resources */,
 			);
