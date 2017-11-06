@@ -70,7 +70,7 @@ class LoginViewController:UIViewController {
             
         }
     }
-    
+    //check whether the user is logged in
     func isLoggedIn() -> Bool {
         if Auth.auth().currentUser != nil {
             return true;
@@ -84,9 +84,8 @@ class LoginViewController:UIViewController {
                 (user,error) in
                 if error == nil {
                     print("Signup successful")
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Message")
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Login")
                     self.present(vc!, animated: true, completion: nil)
-
                 } else {
                     let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                     let action = UIAlertAction(title: "Success", style: .cancel, handler: nil)

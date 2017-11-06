@@ -17,7 +17,7 @@ class ChatViewController: JSQMessagesViewController {
     
     override func viewDidLoad() {
         //for testing and building purposes
-        super.viewDidLoad()
+        //super.viewDidLoad()
         
         senderId = "1234"
         senderDisplayName = "John";
