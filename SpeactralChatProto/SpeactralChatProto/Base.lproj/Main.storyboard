@@ -61,12 +61,14 @@
                                     <action selector="loginActionWith_send:" destination="83a-3p-fb7" eventType="touchUpInside" id="QRx-Zh-01n"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGl-5g-aKN">
-                                <rect key="frame" x="204" y="318" width="50" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5V-Lb-dVb">
+                                <rect key="frame" x="207" y="318" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="SignUp"/>
                                 <connections>
-                                    <action selector="signUp:" destination="WC9-fU-1xR" eventType="touchUpInside" id="Ndb-EC-C49"/>
+                                    <action selector="signup" destination="WC9-fU-1xR" eventType="touchUpInside" id="JP6-W9-You"/>
+                                    <action selector="signup:" destination="WC9-fU-1xR" eventType="touchUpInside" id="5xX-pw-63e"/>
+                                    <action selector="signupWith_send:" destination="83a-3p-fb7" eventType="touchUpInside" id="t6f-tx-KfA"/>
                                 </connections>
                             </button>
                         </subviews>

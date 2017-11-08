@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 import Foundation
 import UIKit
 import Firebase
@@ -39,20 +38,7 @@ class LoginViewController:UIViewController {
             //if not empty, then check the credentials
         } else {
         //FIRAuth has been renamed to Auth
-//            Auth.auth().createUser(withEmail: userNameTextField.text!, password: passwordTextField.text!) {
-//                (user,error) in
-//                if error == nil {
-//                    print("Login successful")
-//                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Message")
-//                    self.present(vc!, animated: true, completion: nil)
-//
-//                } else {
-//                    let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
-//                    let action = UIAlertAction(title: "Success", style: .cancel, handler: nil)
-//                    alert.addAction(action)
-//                    self.present(alert,animated: true, completion: nil)
-//                }
-//            }
+
             Auth.auth().signIn(withEmail: userNameTextField.text!, password: passwordTextField.text!) {
                 (user,error) in
                 if error == nil {
@@ -70,44 +56,46 @@ class LoginViewController:UIViewController {
             
         }
     }
-    //check whether the user is logged in
-    func isLoggedIn() -> Bool {
-        if Auth.auth().currentUser != nil {
-            return true;
-        }
-        return false;
-    }
     
-    @IBAction func signUp(_ sender: Any) {
-        if userNameTextField.text != "" && passwordTextField.text != "" {
-            Auth.auth().createUser(withEmail: userNameTextField.text!, password: passwordTextField.text!) {
-                (user,error) in
+    @IBAction func signup(_send: AnyObject) {
+        if userNameTextField.text == "" {
+            let alertController = UIAlertController(title: "Error", message: "Please enter your email and password", preferredStyle: .alert)
+            
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            
+            present(alertController, animated: true, completion: nil)
+            
+        } else {
+            Auth.auth().createUser(withEmail: userNameTextField.text!, password: passwordTextField.text!) { (user, error) in
+                
                 if error == nil {
-                    print("Signup successful")
+                    print("You have successfully signed up")
+                    //Goes to the Setup page which lets the user take a photo for their profile picture and also chose a username
+                    
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "Login")
                     self.present(vc!, animated: true, completion: nil)
+                    
                 } else {
-                    let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
-                    let action = UIAlertAction(title: "Success", style: .cancel, handler: nil)
-                    alert.addAction(action)
-                    self.present(alert,animated: true, completion: nil)
+                    let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                    
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    alertController.addAction(defaultAction)
+                    
+                    self.present(alertController, animated: true, completion: nil)
                 }
             }
-                
-            
         }
     }
     
-    
-//    func login(withEmail: String, password: String, loginHandler: nil) {
-//        Auth.auth().signIn(withEmail: withEmail, password: password, completion: { (user,error) in
-//            if error != nil {
-//                self.handleErrors(err: error as! NSError, loginHandler: nil);
-//            } else {
-//                //loginHandler?(nil);
-//
-//            }
-//        });
+    //check whether the user is logged in
+//    func isLoggedIn() -> Bool {
+//        if Auth.auth().currentUser != nil {
+//            return true;
+//        }
+//        return false;
 //    }
+    
+    
 }
 
