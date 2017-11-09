@@ -56,7 +56,7 @@ class LoginViewController:UIViewController {
         }
     }
     
-    @IBAction func pressed(_send: AnyObject) {
+    @IBAction func pressed(_send: UIButton) {
         //check if it is empty
         if userNameTextField.text == "" && passwordTextField.text == "" {
             let alert = UIAlertController(title: "Error", message: "Please enter valid account credentials", preferredStyle: .alert)
@@ -70,8 +70,8 @@ class LoginViewController:UIViewController {
             Auth.auth().createUser(withEmail: userNameTextField.text!, password: passwordTextField.text!) {
                 (user,error) in
                 if error == nil {
-                    print("Login Successful")
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Message")
+                    print("SignUp Successful")
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Login")
                     self.present(vc!,animated:true, completion: nil)
                 } else {
                     let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
