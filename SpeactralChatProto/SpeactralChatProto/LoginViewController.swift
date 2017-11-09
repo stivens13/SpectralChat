@@ -8,7 +8,6 @@
 
 import UIKit
 import Foundation
-import UIKit
 import Firebase
 import FirebaseAuth
 import JSQMessagesViewController
@@ -57,34 +56,32 @@ class LoginViewController:UIViewController {
         }
     }
     
-    @IBAction func signup(_send: AnyObject) {
-        if userNameTextField.text == "" {
-            let alertController = UIAlertController(title: "Error", message: "Please enter your email and password", preferredStyle: .alert)
-            
-            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-            alertController.addAction(defaultAction)
-            
-            present(alertController, animated: true, completion: nil)
-            
+    @IBAction func pressed(_send: AnyObject) {
+        //check if it is empty
+        if userNameTextField.text == "" && passwordTextField.text == "" {
+            let alert = UIAlertController(title: "Error", message: "Please enter valid account credentials", preferredStyle: .alert)
+            let action = UIAlertAction(title: "ok", style: .cancel, handler: nil)
+            alert.addAction(action)
+            present(alert, animated: true, completion: nil)
+            //if not empty, then check the credentials
         } else {
-            Auth.auth().createUser(withEmail: userNameTextField.text!, password: passwordTextField.text!) { (user, error) in
-                
+            //FIRAuth has been renamed to Auth
+            
+            Auth.auth().createUser(withEmail: userNameTextField.text!, password: passwordTextField.text!) {
+                (user,error) in
                 if error == nil {
-                    print("You have successfully signed up")
-                    //Goes to the Setup page which lets the user take a photo for their profile picture and also chose a username
-                    
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Login")
-                    self.present(vc!, animated: true, completion: nil)
-                    
+                    print("Login Successful")
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Message")
+                    self.present(vc!,animated:true, completion: nil)
                 } else {
-                    let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
-                    
-                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                    alertController.addAction(defaultAction)
-                    
-                    self.present(alertController, animated: true, completion: nil)
+                    let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                    let action = UIAlertAction(title: "Success", style: .cancel, handler: nil)
+                    alert.addAction(action)
+                    self.present(alert,animated: true, completion: nil)
                 }
+                
             }
+            
         }
     }
     
