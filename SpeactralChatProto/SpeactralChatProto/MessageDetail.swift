@@ -36,7 +36,7 @@ class MessageDetail {
     init(messageKey: String, messageData: Dictionary<String, AnyObject>) {
         _messageKey = messageKey
         
-        if let recipient = postData["recipient"] as? String {
+        if let recipient = messageData["recipient"] as? String {
             _recipient = recipient
         }
         

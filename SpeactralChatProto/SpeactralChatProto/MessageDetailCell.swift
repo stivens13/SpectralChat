@@ -22,6 +22,7 @@ class MessageDetailCell: UITableViewCell {
     var userPostKey: DatabaseReference!
     let currentUser = KeychainWrapper.standard.string(forKey: "uid")
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -40,9 +41,9 @@ class MessageDetailCell: UITableViewCell {
             let userImg = data["userImg"]
             self.recipientName.text = username as? String
             
-            let ref = Storage.storage().reference(forURL: user as! String)
+            let ref = Storage.storage().reference(forURL: userImg! as! String)
             
-            ref.data(withMaxSize: 100000, completion: {(data, error)
+            ref.getData(maxSize: 100000, completion: {(data, error) in
                 if error != nil {
                     print("could not load image")
                 } else {

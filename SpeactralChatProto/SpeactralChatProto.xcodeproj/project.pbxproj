@@ -15,6 +15,7 @@
 		52727C2B1FBBC2D300CD1BDA /* ConversationListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52727C2A1FBBC2D300CD1BDA /* ConversationListVC.swift */; };
 		52727C2D1FBD258E00CD1BDA /* MessageDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52727C2C1FBD258E00CD1BDA /* MessageDetailCell.swift */; };
 		52727C2F1FBD269400CD1BDA /* MessageDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52727C2E1FBD269400CD1BDA /* MessageDetail.swift */; };
+		52727C311FBFAEBE00CD1BDA /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52727C301FBFAEBE00CD1BDA /* MessageVC.swift */; };
 		52D7E6701FABFB4E003536DC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D7E66F1FABFB4E003536DC /* Constants.swift */; };
 		52D7E6741FAC62CE003536DC /* DatabaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D7E6731FAC62CE003536DC /* DatabaseProvider.swift */; };
 		52D7E6761FB02228003536DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52D7E6751FB02228003536DC /* GoogleService-Info.plist */; };
@@ -33,6 +34,7 @@
 		52727C2A1FBBC2D300CD1BDA /* ConversationListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListVC.swift; sourceTree = "<group>"; };
 		52727C2C1FBD258E00CD1BDA /* MessageDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailCell.swift; sourceTree = "<group>"; };
 		52727C2E1FBD269400CD1BDA /* MessageDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetail.swift; sourceTree = "<group>"; };
+		52727C301FBFAEBE00CD1BDA /* MessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
 		52D7E66E1FABF8E1003536DC /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		52D7E66F1FABFB4E003536DC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		52D7E6731FAC62CE003536DC /* DatabaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProvider.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		04A9FE7A1F9A6F91007E64D8 /* SpeactralChatProto */ = {
 			isa = PBXGroup;
 			children = (
+				52727C301FBFAEBE00CD1BDA /* MessageVC.swift */,
 				04A9FE7B1F9A6F91007E64D8 /* AppDelegate.swift */,
 				04A9FE7F1F9A6F91007E64D8 /* Main.storyboard */,
 				04A9FE821F9A6F91007E64D8 /* Assets.xcassets */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52727C311FBFAEBE00CD1BDA /* MessageVC.swift in Sources */,
 				52727C2B1FBBC2D300CD1BDA /* ConversationListVC.swift in Sources */,
 				04FD170D1FA3AC5200AF596F /* LoginViewController.swift in Sources */,
 				04A9FE7C1F9A6F91007E64D8 /* AppDelegate.swift in Sources */,
