@@ -56,21 +56,42 @@ class ConversationListVC: UIViewController, UITableViewDelegate, UITableViewData
             cell.configureCell(messageDetail: messageDet)
             return cell
         } else {
-            return messageDetailCell()
+            return MessageDetailCell()
         }
         
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        recipient = messageDetail[indexPath.row].recipient
+        
+        messageId = messageDetail[indexPath.row].messageRef.key
+        
+        performSegue(withIdentifier: "toMessage", sender: nil)
+        
+        
+        
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destinationViewController = segue.destination as? MessageVC {
-            //destinationViewController.recipient
+            
+            destinationViewController.recipient = recipient
+            
+            destinationViewController.messageId = messageId
+            
         }
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
+    }
+    
+    @IBAction func signOut(_ sender: AnyObject) {
+        
+        try! Auth.auth().signOut()
+        
+        KeychainWrapper.standard.removeObject(forKey: "uid")
+        
+        dismiss(animated: true, completion: nil)
     }
     
     

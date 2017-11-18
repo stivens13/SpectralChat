@@ -142,6 +142,9 @@
                                         <rect key="frame" x="7" y="41" width="48" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Logout"/>
+                                        <connections>
+                                            <action selector="signOut:" destination="9Fd-H7-yC2" eventType="touchUpInside" id="Wbs-70-tJe"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -185,10 +188,44 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7kr-ao-uZD"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="QPs-4u-aaP" id="L7f-hS-eTt"/>
+                        <segue destination="blN-DK-hyg" kind="show" identifier="toMessages" id="QFT-UG-JM5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L9I-FG-Dcq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1156" y="-57.635467980295566"/>
+        </scene>
+        <!--MessageVC-->
+        <scene sceneID="Ue6-gt-ety">
+            <objects>
+                <viewController id="blN-DK-hyg" customClass="MessageVC" customModule="SpeactralChatProto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p8E-IR-Di3" customClass="MessageV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="MAq-bo-XdP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CXd-Xn-q7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1938" y="-58"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uiO-qv-G7O">
+            <objects>
+                <viewController id="kg6-kf-ID6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cnc-qH-hhm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Qsr-3l-bVa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VG4-jw-Doq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2735" y="-55"/>
         </scene>
     </scenes>
 </document>

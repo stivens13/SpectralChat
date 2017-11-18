@@ -25,7 +25,7 @@ class MessageDetail {
         return _messageKey
     }
     
-    var messageReg: DatabaseReference {
+    var messageRef: DatabaseReference {
         return _messageRef
     }
     
