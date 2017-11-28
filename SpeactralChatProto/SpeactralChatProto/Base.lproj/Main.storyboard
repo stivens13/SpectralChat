@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="83a-3p-fb7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kg6-kf-ID6">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -197,10 +197,10 @@
             </objects>
             <point key="canvasLocation" x="1156" y="-57.635467980295566"/>
         </scene>
-        <!--MessageVC-->
+        <!--ChatUI-->
         <scene sceneID="Ue6-gt-ety">
             <objects>
-                <viewController id="blN-DK-hyg" customClass="MessageVC" customModule="SpeactralChatProto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="blN-DK-hyg" customClass="ChatUI" customModule="SpeactralChatProto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p8E-IR-Di3" customClass="MessageV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -212,10 +212,10 @@
             </objects>
             <point key="canvasLocation" x="1938" y="-58"/>
         </scene>
-        <!--View Controller-->
+        <!--ChatUI-->
         <scene sceneID="uiO-qv-G7O">
             <objects>
-                <viewController id="kg6-kf-ID6" sceneMemberID="viewController">
+                <viewController id="kg6-kf-ID6" customClass="ChatUI" customModule="SpeactralChatProto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cnc-qH-hhm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
