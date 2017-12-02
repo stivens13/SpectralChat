@@ -70,7 +70,19 @@ class LoginViewController:UIViewController {
             Auth.auth().createUser(withEmail: userNameTextField.text!, password: passwordTextField.text!) {
                 (user,error) in
                 if error == nil {
+                    let email = self.userNameTextField.text!
                     print("SignUp Successful")
+                    let ref = Database.database().reference(fromURL: "https://ios-spectral.firebaseio.com/")
+                    let values = ["email": email]
+                    let usersReference = ref.child("users")
+                    usersReference.updateChildValues(values, withCompletionBlock: {(err, ref) in
+                        if err != nil {
+                            print(err)
+                            return
+                        }
+                        
+                        print("success")
+                    })
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "Login")
                     self.present(vc!,animated:true, completion: nil)
                 } else {

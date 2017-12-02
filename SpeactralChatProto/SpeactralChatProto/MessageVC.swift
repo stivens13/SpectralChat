@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class MessageVC: UIViewController {
     
@@ -15,7 +17,7 @@ class MessageVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let ref = Database.database().reference(fromURL: "https://ios-spectral.firebaseio.com/")
         // Do any additional setup after loading the view.
     }
 

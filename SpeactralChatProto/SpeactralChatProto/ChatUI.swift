@@ -7,14 +7,17 @@
 //
 
 import Foundation
+import Firebase
+import FirebaseDatabase
 import JSQMessagesViewController
 
 class ChatUI: JSQMessagesViewController {
     var messages = [JSQMessage]()
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.senderId = "1"
+        self.senderId = Auth.auth().currentUser?.uid
         self.senderDisplayName = "John"
     }
     
