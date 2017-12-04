@@ -72,9 +72,14 @@ class LoginViewController:UIViewController {
                 if error == nil {
                     let email = self.userNameTextField.text!
                     print("SignUp Successful")
+                    
+                    guard let uid = user?.uid else {
+                        return
+                    }
                     let ref = Database.database().reference(fromURL: "https://ios-spectral.firebaseio.com/")
                     let values = ["email": email]
-                    let usersReference = ref.child("users")
+                    //store the user information under a unique id that is assigned by firebase.
+                    let usersReference = ref.child("users").child(uid)
                     usersReference.updateChildValues(values, withCompletionBlock: {(err, ref) in
                         if err != nil {
                             print(err)
