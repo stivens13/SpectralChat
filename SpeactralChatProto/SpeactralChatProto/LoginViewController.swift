@@ -56,51 +56,51 @@ class LoginViewController:UIViewController {
         }
     }
     
-    @IBAction func pressed(_send: UIButton) {
-        //check if it is empty
-        if userNameTextField.text == "" && passwordTextField.text == "" {
-            let alert = UIAlertController(title: "Error", message: "Please enter valid account credentials", preferredStyle: .alert)
-            let action = UIAlertAction(title: "ok", style: .cancel, handler: nil)
-            alert.addAction(action)
-            present(alert, animated: true, completion: nil)
-            //if not empty, then check the credentials
-        } else {
-            //FIRAuth has been renamed to Auth
-            
-            Auth.auth().createUser(withEmail: userNameTextField.text!, password: passwordTextField.text!) {
-                (user,error) in
-                if error == nil {
-                    let email = self.userNameTextField.text!
-                    print("SignUp Successful")
-                    
-                    guard let uid = user?.uid else {
-                        return
-                    }
-                    let ref = Database.database().reference(fromURL: "https://ios-spectral.firebaseio.com/")
-                    let values = ["email": email]
-                    //store the user information under a unique id that is assigned by firebase.
-                    let usersReference = ref.child("users").child(uid)
-                    usersReference.updateChildValues(values, withCompletionBlock: {(err, ref) in
-                        if err != nil {
-                            print(err)
-                            return
-                        }
-                        
-                        print("success")
-                    })
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Login")
-                    self.present(vc!,animated:true, completion: nil)
-                } else {
-                    let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
-                    let action = UIAlertAction(title: "Success", style: .cancel, handler: nil)
-                    alert.addAction(action)
-                    self.present(alert,animated: true, completion: nil)
-                }
-                
-            }
-            
-        }
-    }
+//    @IBAction func pressed(_send: UIButton) {
+//        //check if it is empty
+//        if userNameTextField.text == "" && passwordTextField.text == "" {
+//            let alert = UIAlertController(title: "Error", message: "Please enter valid account credentials", preferredStyle: .alert)
+//            let action = UIAlertAction(title: "ok", style: .cancel, handler: nil)
+//            alert.addAction(action)
+//            present(alert, animated: true, completion: nil)
+//            //if not empty, then check the credentials
+//        } else {
+//            //FIRAuth has been renamed to Auth
+//
+//            Auth.auth().createUser(withEmail: userNameTextField.text!, password: passwordTextField.text!) {
+//                (user,error) in
+//                if error == nil {
+//                    let email = self.userNameTextField.text!
+//                    print("SignUp Successful")
+//
+//                    guard let uid = user?.uid else {
+//                        return
+//                    }
+//                    let ref = Database.database().reference(fromURL: "https://ios-spectral.firebaseio.com/")
+//                    let values = ["email": email]
+//                    //store the user information under a unique id that is assigned by firebase.
+//                    let usersReference = ref.child("users").child(uid)
+//                    usersReference.updateChildValues(values, withCompletionBlock: {(err, ref) in
+//                        if err != nil {
+//                            print(err)
+//                            return
+//                        }
+//
+//                        print("success")
+//                    })
+//                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Login")
+//                    self.present(vc!,animated:true, completion: nil)
+//                } else {
+//                    let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+//                    let action = UIAlertAction(title: "Success", style: .cancel, handler: nil)
+//                    alert.addAction(action)
+//                    self.present(alert,animated: true, completion: nil)
+//                }
+//
+//            }
+//
+//        }
+//    }
     
     //check whether the user is logged in
 //    func isLoggedIn() -> Bool {

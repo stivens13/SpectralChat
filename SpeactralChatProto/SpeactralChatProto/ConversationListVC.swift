@@ -32,7 +32,9 @@ class ConversationListVC: UIViewController, UITableViewDelegate, UITableViewData
         var ref: DatabaseReference!
         ref = Database.database().reference()
         
-        ref.child("users").child(currentUser!).child("messages").observe(.value, with: {(snapshot) in
+        let userID = Auth.auth().currentUser?.uid
+        
+        ref.child("users").child(userID!).child("messages").observe(.value, with: {(snapshot) in
             if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
                 self.messageDetail.removeAll()
                 
