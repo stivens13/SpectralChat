@@ -88,6 +88,9 @@ class ConversationListVC: UIViewController, UITableViewDelegate, UITableViewData
         return 1
     }
     
+    func handleNewMessage() {
+        let 
+    }
     @IBAction func signOut(_ sender: AnyObject) {
         
         try! Auth.auth().signOut()
