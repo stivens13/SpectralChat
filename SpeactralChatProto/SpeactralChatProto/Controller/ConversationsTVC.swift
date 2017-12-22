@@ -2,86 +2,122 @@
 //  ConversationsTVC.swift
 //  SpeactralChatProto
 //
-//  Created by Nikita Voloshenko on 12/22/17.
+//  Created by John Mai on 12/22/17.
 //  Copyright © 2017 Nikita Voloshenko. All rights reserved.
 //
 
 import UIKit
-
+import Firebase
+import FirebaseDatabase
+import SwiftKeychainWrapper
 class ConversationsTVC: UITableViewController {
-
+    var messageDetail = [MessageDetail]()
+    
+    var detail: MessageDetail!
+    var currentUser = KeychainWrapper.standard.string(forKey: "uid")
+    
+    var recipient:String!
+    
+    var messageId:String!
+    
+    var ref = Database.database().reference()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        let image = #imageLiteral(resourceName: "new_message")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(handleNewMessage))
+        // Do any additional setup after loading the view.
+        checkUserLoggedIn()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    
+    @objc func handleNewMessage() {
+        let chatsTBV = ChatsTBV()
+        let navController = UINavigationController(rootViewController: chatsTBV)
+        present(navController, animated: true, completion: nil)
     }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+    func checkUserLoggedIn() {
+        if Auth.auth().currentUser?.uid == nil {
+            perform(#selector(logout(_:)), with: nil, afterDelay: 0)
+            
+        } else {
+            let uid = Auth.auth().currentUser?.uid
+            Database.database().reference().child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
+                if let dictionary = snapshot.value as? [String: AnyObject] {
+                    print(dictionary["username"]!)
+                    //                    self.navigationItem.title = dictionary["username"] as? String
+                    self.title = dictionary["username"] as? String
+                    
+                }
+            }, withCancel: nil)
+        }
     }
-
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destinationViewController = segue.destination as? MessageVC {
+            
+            destinationViewController.recipient = recipient
+            
+            destinationViewController.messageId = messageId
+            
+        }
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    @IBAction func addNewUser(_ sender: Any) {
+        showInputDialog()
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    
+    func showInputDialog() -> String {
+        //Creating UIAlertController and
+        //Setting title and message for the alert dialog
+        let alertController = UIAlertController(title: "Enter details?", message: "Enter your name and email", preferredStyle: .alert)
+        
+        var newUserName = "default"
+        
+        //the confirm action taking the inputs
+        let confirmAction = UIAlertAction(title: "Enter", style: .default) { (_) in
+            
+            //getting the input values from user
+            newUserName = (alertController.textFields?[0].text)!
+            //            let email = alertController.textFields?[1].text
+            
+            //            self.labelMessage.text = "Name: " + name! + "Email: " + email!
+            
+        }
+        
+        //the cancel action doing nothing
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (_) in }
+        
+        //adding textfields to our dialog box
+        //        alertController.addTextField { (textField) in
+        //            textField.placeholder = "Enter Name"
+        //        }
+        alertController.addTextField { (textField) in
+            textField.placeholder = "Enter Email"
+        }
+        
+        //adding the action to dialogbox
+        alertController.addAction(confirmAction)
+        alertController.addAction(cancelAction)
+        
+        //finally presenting the dialog box
+        self.present(alertController, animated: true, completion: nil)
+        
+        return newUserName
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
+    @IBAction func logout(_ sender: AnyObject) {
+        
+        try! Auth.auth().signOut()
+        
+        KeychainWrapper.standard.removeObject(forKey: "uid")
+        
+        dismiss(animated: true, completion: nil)
     }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
     /*
     // MARK: - Navigation
 
