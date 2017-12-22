@@ -13,7 +13,8 @@ import SwiftKeychainWrapper
 
 class SignUpVC: UIViewController {
     
-    @IBOutlet weak var usernameTF: UITextField!
+    @IBOutlet weak var userName: UITextField!
+    @IBOutlet weak var email: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var passwordRepeatTF: UITextField!
     var currentUser: String?
@@ -26,7 +27,7 @@ class SignUpVC: UIViewController {
     
     @IBAction func signUp(_ sender: Any) {
         
-        if usernameTF.text == "" && passwordTF.text == "" {
+        if email.text == "" && passwordTF.text == "" {
             let alert = UIAlertController(title: "Error", message: "Please enter valid account credentials", preferredStyle: .alert)
             let action = UIAlertAction(title: "ok", style: .cancel, handler: nil)
             alert.addAction(action)
@@ -41,17 +42,19 @@ class SignUpVC: UIViewController {
 
         } else {
             
-            Auth.auth().createUser(withEmail: usernameTF.text!, password: passwordTF.text!) {
+            Auth.auth().createUser(withEmail: email.text!, password: passwordTF.text!) {
                 (user,error) in
                 if error == nil {
-                    let email = self.usernameTF.text!
+                    let email = self.email.text!
                     print("SignUp Successful")
                     
                     guard let uid = user?.uid else {
                         return
                     }
                     let ref = Database.database().reference(fromURL: "https://ios-spectral.firebaseio.com/")
-                    let values = ["email": email]
+                    
+                    let values = ["email": email,
+                                  "username": self.userName.text!]
                     //store the user information under a unique id that is assigned by firebase.
                     let usersReference = ref.child("users").child(uid)
                     usersReference.updateChildValues(values, withCompletionBlock: {(err, ref) in

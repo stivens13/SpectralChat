@@ -90,7 +90,7 @@ class ConversationListVC: UIViewController, UITableViewDelegate, UITableViewData
         return 1
     }
     
-    @IBAction func signOut(_ sender: AnyObject) {
+    @IBAction func logout(_ sender: AnyObject) {
         
         try! Auth.auth().signOut()
         
