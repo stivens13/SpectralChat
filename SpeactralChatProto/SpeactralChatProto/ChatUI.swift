@@ -38,19 +38,19 @@ class ChatUI: JSQMessagesViewController {
         observeMessages()
     }
 
-    func observeUsers(_ id: String)
-    {
-        Database.database().reference().child("users").child(id).observe(.value, with: {
-            snapshot in
-            if let dict = snapshot.value as? [String: AnyObject]
-            {
-                let avatarUrl = dict["profileURL"] as! String
-
-                self.setupAvatar(avatarUrl, messageId: id)
-            }
-        })
-
-    }
+//    func observeUsers(_ id: String)
+//    {
+//        Database.database().reference().child("users").child(id).observe(.value, with: {
+//            snapshot in
+//            if let dict = snapshot.value as? [String: AnyObject]
+//            {
+//                let avatarUrl = dict["profileURL"] as! String
+//
+//                self.setupAvatar(avatarUrl, messageId: id)
+//            }
+//        })
+//
+//    }
 
     func setupAvatar(_ url: String, messageId: String)
     {
@@ -58,8 +58,8 @@ class ChatUI: JSQMessagesViewController {
             let fileUrl = URL(string: url)
             let data = try? Data(contentsOf: fileUrl!)
             let image = UIImage(data: data!)
-            let userImg = JSQMessagesAvatarImageFactory.avatarImage(with: image, diameter: 30)
-            self.avatarDict[messageId] = userImg
+            //let userImg = JSQMessagesAvatarImageFactory.avatarImage(with: image, diameter: 30)
+            //self.avatarDict[messageId] = userImg
             self.collectionView.reloadData()
 
         } else {
@@ -77,7 +77,7 @@ class ChatUI: JSQMessagesViewController {
                 let senderId = dict["senderId"] as! String
                 let senderName = dict["senderName"] as! String
 
-                self.observeUsers(senderId)
+                //self.observeUsers(senderId)
                 switch mediaType {
 
                 case "TEXT":
