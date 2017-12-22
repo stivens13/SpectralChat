@@ -202,10 +202,10 @@ class ChatUI: JSQMessagesViewController {
         let bubbleFactory = JSQMessagesBubbleImageFactory()
         if message.senderId == self.senderId {
 
-            return bubbleFactory!.outgoingMessagesBubbleImage(with: .black)
+            return bubbleFactory!.outgoingMessagesBubbleImage(with: .blue)
         } else {
 
-            return bubbleFactory!.incomingMessagesBubbleImage(with: .blue)
+            return bubbleFactory!.incomingMessagesBubbleImage(with: .green)
 
         }
 
@@ -249,6 +249,10 @@ class ChatUI: JSQMessagesViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func goBack(_ sender: AnyObject) {
+        
+    }
+    
     @IBAction func logoutDidTapped(_ sender: AnyObject) {
 
         do {
@@ -293,7 +297,7 @@ class ChatUI: JSQMessagesViewController {
                 newMessage.setValue(messageData)
 
             }
-
+            //reuse code from photo
         } else if let video = video {
             let filePath = "\(Auth.auth().currentUser)/\(Date.timeIntervalSinceReferenceDate)"
             print(filePath)
