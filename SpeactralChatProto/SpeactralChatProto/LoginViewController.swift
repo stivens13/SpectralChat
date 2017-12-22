@@ -42,7 +42,7 @@ class LoginViewController:UIViewController {
                 (user,error) in
                 if error == nil {
                     print("Login Successful")
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Messages")
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "ChatUI")
                     self.present(vc!,animated:true, completion: nil)
                 } else {
                     let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
