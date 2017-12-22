@@ -63,6 +63,7 @@ class ChatUI: JSQMessagesViewController {
             self.collectionView.reloadData()
 
         } else {
+            //basic profileImage load. IMPLEMENT later on
             avatarDict[messageId] = JSQMessagesAvatarImageFactory.avatarImage(with: UIImage(named: "profileImage"), diameter: 30)
             collectionView.reloadData()
         }
@@ -260,13 +261,13 @@ class ChatUI: JSQMessagesViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
         // From main storyboard instantiate a View controller
-        let LogInVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        let LoginVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
 
         // Get the app delegate
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
         // Set LogIn View Controller as root view controller
-        appDelegate.window?.rootViewController = LogInVC
+        appDelegate.window?.rootViewController = LoginVC
     }
 
     func sendMedia(_ picture: UIImage?, video: URL?) {
