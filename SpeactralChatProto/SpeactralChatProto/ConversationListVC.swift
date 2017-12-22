@@ -32,7 +32,9 @@ class ConversationListVC: UIViewController, UITableViewDelegate, UITableViewData
         var ref: DatabaseReference!
         ref = Database.database().reference()
         
-        ref.child("users").child(currentUser!).child("messages").observe(.value, with: {(snapshot) in
+        let userID = Auth.auth().currentUser?.uid
+        
+        ref.child("users").child(userID!).child("messages").observe(.value, with: {(snapshot) in
             if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
                 self.messageDetail.removeAll()
                 
@@ -62,6 +64,23 @@ class ConversationListVC: UIViewController, UITableViewDelegate, UITableViewData
             return MessageDetailCell()
         }
         
+    }
+    func handleNewMessage() {
+        
+    }
+    
+    func checkUserLoggedIn() {
+        if Auth.auth().currentUser?.uid == nil {
+            perform(#selector(signOut(_:)), with: nil, afterDelay: 0)
+            
+        } else {
+            let uid = Auth.auth().currentUser?.uid
+            Database.database().reference().child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
+                if let dictionary = snapshot.value as? [String: AnyObject] {
+                    self.navigationItem.title = dictionary["name"] as? String
+                }
+            }, withCancel: nil)
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

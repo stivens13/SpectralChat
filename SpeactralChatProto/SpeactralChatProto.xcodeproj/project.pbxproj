@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0430655B1FEC781300530875 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430655A1FEC781300530875 /* SignUpVC.swift */; };
 		04A9FE7C1F9A6F91007E64D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9FE7B1F9A6F91007E64D8 /* AppDelegate.swift */; };
 		04A9FE811F9A6F91007E64D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A9FE7F1F9A6F91007E64D8 /* Main.storyboard */; };
 		04A9FE831F9A6F91007E64D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A9FE821F9A6F91007E64D8 /* Assets.xcassets */; };
@@ -20,10 +21,11 @@
 		52D7E6741FAC62CE003536DC /* DatabaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D7E6731FAC62CE003536DC /* DatabaseProvider.swift */; };
 		52D7E6761FB02228003536DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52D7E6751FB02228003536DC /* GoogleService-Info.plist */; };
 		52EF18091FCE0046002CFE30 /* ChatUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EF18081FCE0046002CFE30 /* ChatUI.swift */; };
-		C4DFB252BE084181527C1BFA /* Pods_SpeactralChatProto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06A0CD7C29A693F8CA284A2 /* Pods_SpeactralChatProto.framework */; };
+		BDEA1E7FD2A4141542429E07 /* Pods_SpeactralChatProto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB01E667CCC70CD1EF7D27 /* Pods_SpeactralChatProto.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0430655A1FEC781300530875 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		04A9FE781F9A6F91007E64D8 /* SpeactralChatProto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeactralChatProto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A9FE7B1F9A6F91007E64D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04A9FE801F9A6F91007E64D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,7 +33,7 @@
 		04A9FE851F9A6F91007E64D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04A9FE871F9A6F91007E64D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04FD170C1FA3AC5200AF596F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		1725FE2B569E940722C5FE6C /* Pods-SpeactralChatProto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeactralChatProto.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto.release.xcconfig"; sourceTree = "<group>"; };
+		1F1315E3E3186926B1386498 /* Pods-SpeactralChatProto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeactralChatProto.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto.release.xcconfig"; sourceTree = "<group>"; };
 		52727C2A1FBBC2D300CD1BDA /* ConversationListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListVC.swift; sourceTree = "<group>"; };
 		52727C2C1FBD258E00CD1BDA /* MessageDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailCell.swift; sourceTree = "<group>"; };
 		52727C2E1FBD269400CD1BDA /* MessageDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetail.swift; sourceTree = "<group>"; };
@@ -42,8 +44,8 @@
 		52D7E6751FB02228003536DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		52EF18081FCE0046002CFE30 /* ChatUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUI.swift; sourceTree = "<group>"; };
 		52F11CF31FA0044700C3936E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		5A073BB0F2EB5073F36A3349 /* Pods-SpeactralChatProto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeactralChatProto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto.debug.xcconfig"; sourceTree = "<group>"; };
-		B06A0CD7C29A693F8CA284A2 /* Pods_SpeactralChatProto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeactralChatProto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53CB01E667CCC70CD1EF7D27 /* Pods_SpeactralChatProto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeactralChatProto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79472134628583A3272D7689 /* Pods-SpeactralChatProto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeactralChatProto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,21 +53,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4DFB252BE084181527C1BFA /* Pods_SpeactralChatProto.framework in Frameworks */,
+				BDEA1E7FD2A4141542429E07 /* Pods_SpeactralChatProto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0271629354D43DAAE4FC20AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53CB01E667CCC70CD1EF7D27 /* Pods_SpeactralChatProto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		043065571FEC773B00530875 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		043065581FEC774100530875 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		043065591FEC774600530875 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0430655A1FEC781300530875 /* SignUpVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		04A9FE6F1F9A6F90007E64D8 = {
 			isa = PBXGroup;
 			children = (
 				52D7E66E1FABF8E1003536DC /* Bridging-Header.h */,
 				04A9FE7A1F9A6F91007E64D8 /* SpeactralChatProto */,
 				04A9FE791F9A6F91007E64D8 /* Products */,
-				84123EA8409FE7A10D618A17 /* Pods */,
-				2259A8458671B91947C7A043 /* Frameworks */,
+				D487CFE34B133B93FF472976 /* Pods */,
+				0271629354D43DAAE4FC20AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,10 +112,13 @@
 		04A9FE7A1F9A6F91007E64D8 /* SpeactralChatProto */ = {
 			isa = PBXGroup;
 			children = (
-				52727C301FBFAEBE00CD1BDA /* MessageVC.swift */,
-				04A9FE7B1F9A6F91007E64D8 /* AppDelegate.swift */,
+				043065571FEC773B00530875 /* Model */,
+				043065581FEC774100530875 /* View */,
+				043065591FEC774600530875 /* Controller */,
 				04A9FE7F1F9A6F91007E64D8 /* Main.storyboard */,
 				04A9FE821F9A6F91007E64D8 /* Assets.xcassets */,
+				52727C301FBFAEBE00CD1BDA /* MessageVC.swift */,
+				04A9FE7B1F9A6F91007E64D8 /* AppDelegate.swift */,
 				04A9FE841F9A6F91007E64D8 /* LaunchScreen.storyboard */,
 				04A9FE871F9A6F91007E64D8 /* Info.plist */,
 				04FD170C1FA3AC5200AF596F /* LoginViewController.swift */,
@@ -98,19 +133,11 @@
 			path = SpeactralChatProto;
 			sourceTree = "<group>";
 		};
-		2259A8458671B91947C7A043 /* Frameworks */ = {
+		D487CFE34B133B93FF472976 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B06A0CD7C29A693F8CA284A2 /* Pods_SpeactralChatProto.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		84123EA8409FE7A10D618A17 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5A073BB0F2EB5073F36A3349 /* Pods-SpeactralChatProto.debug.xcconfig */,
-				1725FE2B569E940722C5FE6C /* Pods-SpeactralChatProto.release.xcconfig */,
+				79472134628583A3272D7689 /* Pods-SpeactralChatProto.debug.xcconfig */,
+				1F1315E3E3186926B1386498 /* Pods-SpeactralChatProto.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -122,12 +149,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04A9FE8A1F9A6F91007E64D8 /* Build configuration list for PBXNativeTarget "SpeactralChatProto" */;
 			buildPhases = (
-				9920641A8260C512DC3EC239 /* [CP] Check Pods Manifest.lock */,
+				4BD3CD8BFBE6D4600EAD18DB /* [CP] Check Pods Manifest.lock */,
 				04A9FE741F9A6F91007E64D8 /* Sources */,
 				04A9FE751F9A6F91007E64D8 /* Frameworks */,
 				04A9FE761F9A6F91007E64D8 /* Resources */,
-				24BC00EEA7DB2F3013D2F85F /* [CP] Embed Pods Frameworks */,
-				5E0591E040255B2BE020B1F1 /* [CP] Copy Pods Resources */,
+				0A5F4487D6B37B4186CC6D68 /* [CP] Embed Pods Frameworks */,
+				39CFB901FC20332AF89AC54B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,7 +217,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		24BC00EEA7DB2F3013D2F85F /* [CP] Embed Pods Frameworks */ = {
+		0A5F4487D6B37B4186CC6D68 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -222,7 +249,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5E0591E040255B2BE020B1F1 /* [CP] Copy Pods Resources */ = {
+		39CFB901FC20332AF89AC54B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -237,7 +264,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9920641A8260C512DC3EC239 /* [CP] Check Pods Manifest.lock */ = {
+		4BD3CD8BFBE6D4600EAD18DB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -270,6 +297,7 @@
 				52D7E6741FAC62CE003536DC /* DatabaseProvider.swift in Sources */,
 				52727C2D1FBD258E00CD1BDA /* MessageDetailCell.swift in Sources */,
 				52D7E6701FABFB4E003536DC /* Constants.swift in Sources */,
+				0430655B1FEC781300530875 /* SignUpVC.swift in Sources */,
 				52727C2F1FBD269400CD1BDA /* MessageDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,7 +434,7 @@
 		};
 		04A9FE8B1F9A6F91007E64D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A073BB0F2EB5073F36A3349 /* Pods-SpeactralChatProto.debug.xcconfig */;
+			baseConfigurationReference = 79472134628583A3272D7689 /* Pods-SpeactralChatProto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -424,7 +452,7 @@
 		};
 		04A9FE8C1F9A6F91007E64D8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1725FE2B569E940722C5FE6C /* Pods-SpeactralChatProto.release.xcconfig */;
+			baseConfigurationReference = 1F1315E3E3186926B1386498 /* Pods-SpeactralChatProto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
