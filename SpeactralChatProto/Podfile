@@ -12,6 +12,7 @@ pod 'FirebaseInstanceID'
 pod 'FirebaseMessaging'
 pod 'FirebaseStorage'
 pod 'SwiftKeychainWrapper'
+pod 'NMPopUpViewSwift'
   # Pods for SpeactralChatProto
 
 end
