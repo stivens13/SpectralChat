@@ -71,7 +71,7 @@ class ConversationListVC: UIViewController, UITableViewDelegate, UITableViewData
     
     func checkUserLoggedIn() {
         if Auth.auth().currentUser?.uid == nil {
-            perform(#selector(signOut(_:)), with: nil, afterDelay: 0)
+            perform(#selector(logout(_:)), with: nil, afterDelay: 0)
             
         } else {
             let uid = Auth.auth().currentUser?.uid

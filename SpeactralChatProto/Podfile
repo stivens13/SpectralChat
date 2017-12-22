@@ -13,6 +13,7 @@ pod 'FirebaseMessaging'
 pod 'FirebaseStorage'
 pod 'SwiftKeychainWrapper'
 pod 'NMPopUpViewSwift'
+pod 'SDWebImage-ProgressView'
   # Pods for SpeactralChatProto
 
 end
