@@ -13,7 +13,6 @@
 		04A9FE831F9A6F91007E64D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A9FE821F9A6F91007E64D8 /* Assets.xcassets */; };
 		04A9FE861F9A6F91007E64D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A9FE841F9A6F91007E64D8 /* LaunchScreen.storyboard */; };
 		04FD170D1FA3AC5200AF596F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FD170C1FA3AC5200AF596F /* LoginViewController.swift */; };
-		52727C2B1FBBC2D300CD1BDA /* ConversationListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52727C2A1FBBC2D300CD1BDA /* ConversationListVC.swift */; };
 		52727C2D1FBD258E00CD1BDA /* MessageDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52727C2C1FBD258E00CD1BDA /* MessageDetailCell.swift */; };
 		52727C2F1FBD269400CD1BDA /* MessageDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52727C2E1FBD269400CD1BDA /* MessageDetail.swift */; };
 		52727C311FBFAEBE00CD1BDA /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52727C301FBFAEBE00CD1BDA /* MessageVC.swift */; };
@@ -37,7 +36,6 @@
 		04FD170C1FA3AC5200AF596F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0AA8C3E08B96B50A453A9212 /* Pods-SpeactralChatProto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeactralChatProto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto.debug.xcconfig"; sourceTree = "<group>"; };
 		0CEB235FF7DA4F2695FBC944 /* Pods-SpeactralChatProto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeactralChatProto.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto.release.xcconfig"; sourceTree = "<group>"; };
-		52727C2A1FBBC2D300CD1BDA /* ConversationListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListVC.swift; sourceTree = "<group>"; };
 		52727C2C1FBD258E00CD1BDA /* MessageDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailCell.swift; sourceTree = "<group>"; };
 		52727C2E1FBD269400CD1BDA /* MessageDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetail.swift; sourceTree = "<group>"; };
 		52727C301FBFAEBE00CD1BDA /* MessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 				52D7E66F1FABFB4E003536DC /* Constants.swift */,
 				52D7E6751FB02228003536DC /* GoogleService-Info.plist */,
 				52D7E6731FAC62CE003536DC /* DatabaseProvider.swift */,
-				52727C2A1FBBC2D300CD1BDA /* ConversationListVC.swift */,
 				52727C2C1FBD258E00CD1BDA /* MessageDetailCell.swift */,
 				52727C2E1FBD269400CD1BDA /* MessageDetail.swift */,
 				52EF18081FCE0046002CFE30 /* ChatUI.swift */,
@@ -304,7 +301,6 @@
 				52D382771FED95AF0045C643 /* ConversationsTVC.swift in Sources */,
 				52EF18091FCE0046002CFE30 /* ChatUI.swift in Sources */,
 				52727C311FBFAEBE00CD1BDA /* MessageVC.swift in Sources */,
-				52727C2B1FBBC2D300CD1BDA /* ConversationListVC.swift in Sources */,
 				52D3827B1FED98640045C643 /* ChatsTBV.swift in Sources */,
 				04FD170D1FA3AC5200AF596F /* LoginViewController.swift in Sources */,
 				04A9FE7C1F9A6F91007E64D8 /* AppDelegate.swift in Sources */,
