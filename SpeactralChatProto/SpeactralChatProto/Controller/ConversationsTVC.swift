@@ -21,14 +21,19 @@ class ConversationsTVC: UITableViewController {
     var messageId:String!
     
     var ref = Database.database().reference()
+    
+    @IBOutlet weak var bar: UINavigationBar!
+    
+    @IBAction func newMessagePress(_ sender: Any) {
+            print("Hello")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.delegate = self
         tableView.dataSource = self
-        
-        let image = #imageLiteral(resourceName: "new_message")
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(handleNewMessage))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logout))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "New Message", style: .plain, target: self, action: #selector(handleNewMessage))
         // Do any additional setup after loading the view.
         checkUserLoggedIn()
     }
