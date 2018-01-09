@@ -25,6 +25,7 @@ class ConversationsTVC: UITableViewController {
     @IBOutlet weak var bar: UINavigationBar!
     
     @IBAction func newMessagePress(_ sender: Any) {
+            //redirect the user to the page to add who they want to talk to
             print("Hello")
     }
     override func viewDidLoad() {
@@ -116,7 +117,7 @@ class ConversationsTVC: UITableViewController {
         return newUserName
     }
     @IBAction func logout(_ sender: AnyObject) {
-        
+        //sign the user out
         try! Auth.auth().signOut()
         
         KeychainWrapper.standard.removeObject(forKey: "uid")

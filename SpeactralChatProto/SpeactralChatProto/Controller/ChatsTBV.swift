@@ -7,14 +7,19 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class ChatsTBV: UITableViewController {
 
     let cellId = "cellId"
+    var users = [User]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(handleCancel))
+        
+        retrieveUser()
     }
 
     @objc func handleCancel() {
@@ -30,6 +35,15 @@ class ChatsTBV: UITableViewController {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: cellId)
         cell.textLabel?.text = "Dummy"
         return cell
+    }
+    
+    func retrieveUser() {
+        Database.database().reference().child("users").observe(.childAdded, with: { (snapshot) in
+            if let dictionary = snapshot.value as? [String: AnyObject] {
+                let user = User()
+                
+            }
+        })
     }
     /*
     // MARK: - Navigation

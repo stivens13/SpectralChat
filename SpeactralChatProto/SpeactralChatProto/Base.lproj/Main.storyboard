@@ -227,10 +227,14 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <items>
                                 <navigationItem title="John" id="aiF-GX-1Q9">
-                                    <barButtonItem key="leftBarButtonItem" title="Logout" id="hPe-qe-je2"/>
+                                    <barButtonItem key="leftBarButtonItem" title="Logout" id="hPe-qe-je2">
+                                        <connections>
+                                            <action selector="logout:" destination="Z23-7f-zKh" id="egu-Tx-vpT"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem key="rightBarButtonItem" title="Item" image="new_message" id="Ocf-80-9MG">
                                         <connections>
-                                            <action selector="newMessagePress:" destination="Z23-7f-zKh" id="1xj-Ie-Gco"/>
+                                            <action selector="newMessagePress:" destination="Z23-7f-zKh" id="Dcv-FB-4Dj"/>
                                         </connections>
                                     </barButtonItem>
                                 </navigationItem>
@@ -258,6 +262,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SG7-ZO-eDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-31" y="-42"/>
+        </scene>
+        <!--ChatsTBV-->
+        <scene sceneID="tTg-Zy-8WG">
+            <objects>
+                <tableViewController storyboardIdentifier="chatsTBV" id="hOA-8V-IJX" customClass="ChatsTBV" customModule="SpeactralChatProto" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dQD-SP-Q5o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="Zwi-Mn-vI8">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Add users" id="lCE-Pn-uVr"/>
+                            </items>
+                        </navigationBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="lwi-te-PKN">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lwi-te-PKN" id="mgQ-gN-k9G">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hOA-8V-IJX" id="Kdp-Mv-pcm"/>
+                            <outlet property="delegate" destination="hOA-8V-IJX" id="CR7-aU-ytz"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ro8-Me-K4k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751" y="-45"/>
         </scene>
         <!--ChatUI-->
         <scene sceneID="eOr-hm-WwF">
@@ -287,7 +326,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OcK-Kl-XRo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="-45"/>
+            <point key="canvasLocation" x="1446" y="-86"/>
         </scene>
     </scenes>
     <resources>
