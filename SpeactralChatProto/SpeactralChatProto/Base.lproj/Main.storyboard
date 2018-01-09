@@ -217,6 +217,7 @@
         <!--ConversationsTVC-->
         <scene sceneID="uum-DR-Xxc">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SG7-ZO-eDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="Messages" id="Z23-7f-zKh" customClass="ConversationsTVC" customModule="SpeactralChatProto" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="g5O-tE-pYz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -259,44 +260,53 @@
                         <outlet property="bar" destination="5AQ-Uf-ftV" id="j5L-FB-3hK"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SG7-ZO-eDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-31" y="-42"/>
+            <point key="canvasLocation" x="-103" y="-240"/>
         </scene>
-        <!--ChatsTBV-->
-        <scene sceneID="tTg-Zy-8WG">
+        <!--Root View Controller-->
+        <scene sceneID="tyn-Re-f6K">
             <objects>
-                <tableViewController storyboardIdentifier="chatsTBV" id="hOA-8V-IJX" customClass="ChatsTBV" customModule="SpeactralChatProto" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dQD-SP-Q5o">
+                <tableViewController id="vUQ-md-AjR" customClass="ChatsTBV" customModule="SpeactralChatProto" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qw4-ET-1F7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="Zwi-Mn-vI8">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <items>
-                                <navigationItem title="Add users" id="lCE-Pn-uVr"/>
-                            </items>
-                        </navigationBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="lwi-te-PKN">
-                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="rkN-uy-kyk">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lwi-te-PKN" id="mgQ-gN-k9G">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rkN-uy-kyk" id="aUA-S2-dtk">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="hOA-8V-IJX" id="Kdp-Mv-pcm"/>
-                            <outlet property="delegate" destination="hOA-8V-IJX" id="CR7-aU-ytz"/>
+                            <outlet property="dataSource" destination="vUQ-md-AjR" id="MrU-vi-Rq9"/>
+                            <outlet property="delegate" destination="vUQ-md-AjR" id="ych-S5-Hww"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="Y2c-FL-r0c"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ro8-Me-K4k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xqh-qk-mHh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="751" y="-45"/>
+            <point key="canvasLocation" x="1466" y="-33"/>
+        </scene>
+        <!--ConversationTVC-->
+        <scene sceneID="D0T-iH-71m">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3FP-cX-c5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="8gX-6u-Yjn" customClass="ConversationTVC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iIC-Qa-Tdf">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vUQ-md-AjR" kind="relationship" relationship="rootViewController" id="ahG-kp-Uo3"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="650" y="-33"/>
         </scene>
         <!--ChatUI-->
         <scene sceneID="eOr-hm-WwF">
@@ -326,7 +336,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OcK-Kl-XRo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1446" y="-86"/>
+            <point key="canvasLocation" x="2438" y="-33"/>
         </scene>
     </scenes>
     <resources>

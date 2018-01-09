@@ -26,15 +26,17 @@ class ConversationsTVC: UITableViewController {
     
     @IBAction func newMessagePress(_ sender: Any) {
             //redirect the user to the page to add who they want to talk to
-            print("Hello")
+            handleNewMessage()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         tableView.delegate = self
         tableView.dataSource = self
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logout))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "New Message", style: .plain, target: self, action: #selector(handleNewMessage))
+        let image = UIImage(named: "new_message")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(handleNewMessage))
         // Do any additional setup after loading the view.
         checkUserLoggedIn()
     }
@@ -48,6 +50,7 @@ class ConversationsTVC: UITableViewController {
         let chatsTBV = ChatsTBV()
         let navController = UINavigationController(rootViewController: chatsTBV)
         present(navController, animated: true, completion: nil)
+        
     }
     func checkUserLoggedIn() {
         if Auth.auth().currentUser?.uid == nil {
