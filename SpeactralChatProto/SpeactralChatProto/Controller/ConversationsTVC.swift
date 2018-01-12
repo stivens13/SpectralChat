@@ -60,9 +60,9 @@ class ConversationsTVC: UITableViewController {
             let uid = Auth.auth().currentUser?.uid
             Database.database().reference().child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
                 if let dictionary = snapshot.value as? [String: AnyObject] {
-                    print(dictionary["username"]!)
+                    print(dictionary["name"]!)
                     //                    self.navigationItem.title = dictionary["username"] as? String
-                    self.title = dictionary["username"] as? String
+                    self.title = dictionary["name"] as? String
                     
                 }
             }, withCancel: nil)

@@ -54,7 +54,7 @@ class SignUpVC: UIViewController {
                     let ref = Database.database().reference(fromURL: "https://ios-spectral.firebaseio.com/")
                     
                     let values = ["email": email,
-                                  "username": self.userName.text!]
+                                  "name": self.userName.text!]
                     //store the user information under a unique id that is assigned by firebase.
                     let usersReference = ref.child("users").child(uid)
                     usersReference.updateChildValues(values, withCompletionBlock: {(err, ref) in

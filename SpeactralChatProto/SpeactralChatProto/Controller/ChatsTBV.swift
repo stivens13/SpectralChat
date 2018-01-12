@@ -13,6 +13,7 @@ import FirebaseDatabase
 class ChatsTBV: UITableViewController {
 
     let cellId = "cellId"
+    
     var users = [User]()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,23 +28,36 @@ class ChatsTBV: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return users.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: cellId)
-        cell.textLabel?.text = "Dummy"
+        let user = users[indexPath.row]
+        cell.textLabel?.text = user.name
+        cell.detailTextLabel?.text = user.email
         return cell
     }
     
     func retrieveUser() {
-        Database.database().reference().child("users").observe(.childAdded, with: { (snapshot) in
-            if let dictionary = snapshot.value as? [String: AnyObject] {
-                let user = User()
-                
+        let rootRef = Database.database().reference()
+        let query = rootRef.child("users").queryOrdered(byChild: "name")
+        query.observe(.value) { (snapshot) in
+            for child in snapshot.children.allObjects as! [DataSnapshot] {
+                if let value = child.value as? NSDictionary {
+                    let user = User()
+                    let name = value["name"] as? String ?? "Name not found"
+                    let email = value["email"] as? String ?? "Email not found"
+                    user.name = name
+                    user.email = email
+                    self.users.append(user)
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                    }
+                }
             }
-        })
+        }
     }
     /*
     // MARK: - Navigation
