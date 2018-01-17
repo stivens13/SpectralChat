@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
+
 class ChatsTBV: UITableViewController {
 
     let cellId = "cellId"
@@ -40,6 +41,19 @@ class ChatsTBV: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 72
+    }
+    
+    var messagesController: ConversationsTVC?
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        dismiss(animated: true) {
+            print("Dismiss completed")
+            let user = self.users[indexPath.row]
+            self.messagesController?.showChatControllerForUser(user: user)
+        }
+    }
     func retrieveUser() {
         let rootRef = Database.database().reference()
         let query = rootRef.child("users").queryOrdered(byChild: "name")
@@ -59,6 +73,8 @@ class ChatsTBV: UITableViewController {
             }
         }
     }
+    
+    
     /*
     // MARK: - Navigation
 

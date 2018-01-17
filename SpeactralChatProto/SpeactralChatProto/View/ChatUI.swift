@@ -137,7 +137,7 @@ class ChatUI: JSQMessagesViewController {
                     }
 
                 default:
-                    print("unknown data type")
+                    print("Unknown Data Type")
 
                 }
 

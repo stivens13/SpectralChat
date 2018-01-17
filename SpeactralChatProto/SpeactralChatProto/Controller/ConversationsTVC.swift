@@ -119,6 +119,13 @@ class ConversationsTVC: UITableViewController {
         
         return newUserName
     }
+    
+    func showChatControllerForUser(user: User) {
+        let chatLogController = ChatUI()
+        chatLogController.senderDisplayName = user.name
+        navigationController?.pushViewController(chatLogController, animated: true)
+    }
+    
     @IBAction func logout(_ sender: AnyObject) {
         //sign the user out
         try! Auth.auth().signOut()
