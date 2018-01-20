@@ -9,12 +9,14 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
-
+import JSQMessagesViewController
 
 class ChatsTBV: UITableViewController {
 
     let cellId = "cellId"
-    
+    var following = [User]()
+    var selectedUser: User?
+    var existingChat: Chat?
     var users = [User]()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,14 +47,9 @@ class ChatsTBV: UITableViewController {
         return 72
     }
     
-    var messagesController: ConversationsTVC?
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        dismiss(animated: true) {
-            print("Dismiss completed")
-            let user = self.users[indexPath.row]
-            self.messagesController?.showChatControllerForUser(user: user)
-        }
+        performSegue(withIdentifier: "toChat", sender: self)
     }
     func retrieveUser() {
         let rootRef = Database.database().reference()
@@ -84,5 +81,16 @@ class ChatsTBV: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
 }
+extension ChatsTBV {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        if segue.identifier == "toChat", let _ = segue.destination as? ChatUI {
+        
+        }
+
+    }
+}
+

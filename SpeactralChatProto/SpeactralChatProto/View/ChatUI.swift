@@ -13,7 +13,7 @@ import FirebaseDatabase
 import FirebaseStorage
 import FirebaseAuth
 import SDWebImage
-class ChatUI: JSQMessagesViewController {
+class ChatUI: JSQMessagesViewController{
     var messages = [JSQMessage]()
     var avatarDict = [String: JSQMessagesAvatarImage]()
     var messageRef : DatabaseReference!
@@ -148,9 +148,9 @@ class ChatUI: JSQMessagesViewController {
     }
 
     override func didPressSend(_ button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!) {
-        //        messages.append(JSQMessage(senderId: senderId, displayName: senderDisplayName, text: text))
-        //        collectionView.reloadData()
-        //        print(messages)
+        messages.append(JSQMessage(senderId: senderId, displayName: senderDisplayName, text: text))
+        collectionView.reloadData()
+        print(messages)
         let newMessage = messageRef.childByAutoId()
         let messageData = ["text": text, "senderId": senderId, "senderName": senderDisplayName, "MediaType": "TEXT"]
         newMessage.setValue(messageData)

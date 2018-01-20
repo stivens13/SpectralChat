@@ -47,9 +47,10 @@ class ConversationsTVC: UITableViewController {
     }
     
     @objc func handleNewMessage() {
-        let chatsTBV = ChatsTBV()
-        let navController = UINavigationController(rootViewController: chatsTBV)
-        present(navController, animated: true, completion: nil)
+//        let chatsTBV = ChatsTBV()
+//        let navController = UINavigationController(rootViewController: chatsTBV)
+//        present(navController, animated: true, completion: nil)
+        self.performSegue(withIdentifier: "toNewMessage", sender: self)
         
     }
     func checkUserLoggedIn() {
@@ -134,6 +135,27 @@ class ConversationsTVC: UITableViewController {
         
         dismiss(animated: true, completion: nil)
     }
+    
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let message = messageId[indexPath.row]
+//        
+//        guard let chatPartnerId = message.chatPartnerId() else {
+//            return
+//        }
+//        
+//        let ref = Database.database().reference().child("users").child(chatPartnerId)
+//        ref.observeSingleEventOfType(.Value, withBlock: { (snapshot) in
+//            guard let dictionary = snapshot.value as? [String: AnyObject] else {
+//                return
+//            }
+//            
+//            let user = User()
+//            user.id = chatPartnerId
+//            user.setValuesForKeysWithDictionary(dictionary)
+//            self.showChatControllerForUser(user)
+//            
+//        }, withCancelBlock: nil)
+//    }
     /*
     // MARK: - Navigation
 
@@ -145,3 +167,9 @@ class ConversationsTVC: UITableViewController {
     */
 
 }
+
+
+
+// MARK: - Navigation
+
+
