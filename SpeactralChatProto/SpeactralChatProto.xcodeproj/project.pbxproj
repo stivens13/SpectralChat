@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0411770B1FA29E69006A0901 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0411770A1FA29E69006A0901 /* GoogleService-Info.plist */; };
+		0430655B1FEC781300530875 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430655A1FEC781300530875 /* SignUpVC.swift */; };
 		04A9FE7C1F9A6F91007E64D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9FE7B1F9A6F91007E64D8 /* AppDelegate.swift */; };
-		04A9FE7E1F9A6F91007E64D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9FE7D1F9A6F91007E64D8 /* ViewController.swift */; };
 		04A9FE811F9A6F91007E64D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A9FE7F1F9A6F91007E64D8 /* Main.storyboard */; };
 		04A9FE831F9A6F91007E64D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A9FE821F9A6F91007E64D8 /* Assets.xcassets */; };
 		04A9FE861F9A6F91007E64D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A9FE841F9A6F91007E64D8 /* LaunchScreen.storyboard */; };
 		04FD170D1FA3AC5200AF596F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FD170C1FA3AC5200AF596F /* LoginViewController.swift */; };
 <<<<<<< HEAD
+<<<<<<< HEAD
 		C4DFB252BE084181527C1BFA /* Pods_SpeactralChatProto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06A0CD7C29A693F8CA284A2 /* Pods_SpeactralChatProto.framework */; };
 =======
+=======
+>>>>>>> e0f1dc6153c970b7ee8f33ca11d61d73f44614d3
 		5235970820101110005EEEB5 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235970720101110005EEEB5 /* Chat.swift */; };
 		5235970C201291DC005EEEB5 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235970B201291DC005EEEB5 /* Message.swift */; };
 		52727C2D1FBD258E00CD1BDA /* MessageDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52727C2C1FBD258E00CD1BDA /* MessageDetailCell.swift */; };
@@ -30,22 +32,27 @@
 		52D7E6761FB02228003536DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52D7E6751FB02228003536DC /* GoogleService-Info.plist */; };
 		52EF18091FCE0046002CFE30 /* ChatUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EF18081FCE0046002CFE30 /* ChatUI.swift */; };
 		ABF149EF1CF737E34612B548 /* Pods_SpeactralChatProto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F29B6DEFDD69D0E063C19A6B /* Pods_SpeactralChatProto.framework */; };
+<<<<<<< HEAD
 >>>>>>> e0f1dc6... Full connection established using segue. Going to work on private messaging and conversation list
+=======
+>>>>>>> e0f1dc6153c970b7ee8f33ca11d61d73f44614d3
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0411770A1FA29E69006A0901 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0430655A1FEC781300530875 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		04A9FE781F9A6F91007E64D8 /* SpeactralChatProto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeactralChatProto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A9FE7B1F9A6F91007E64D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04A9FE7D1F9A6F91007E64D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04A9FE801F9A6F91007E64D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04A9FE821F9A6F91007E64D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A9FE851F9A6F91007E64D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04A9FE871F9A6F91007E64D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04FD170C1FA3AC5200AF596F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 <<<<<<< HEAD
+<<<<<<< HEAD
 		1725FE2B569E940722C5FE6C /* Pods-SpeactralChatProto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeactralChatProto.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto.release.xcconfig"; sourceTree = "<group>"; };
 =======
+=======
+>>>>>>> e0f1dc6153c970b7ee8f33ca11d61d73f44614d3
 		0AA8C3E08B96B50A453A9212 /* Pods-SpeactralChatProto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeactralChatProto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto.debug.xcconfig"; sourceTree = "<group>"; };
 		0CEB235FF7DA4F2695FBC944 /* Pods-SpeactralChatProto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeactralChatProto.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto.release.xcconfig"; sourceTree = "<group>"; };
 		5235970720101110005EEEB5 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
@@ -61,10 +68,12 @@
 		52D7E6731FAC62CE003536DC /* DatabaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProvider.swift; sourceTree = "<group>"; };
 		52D7E6751FB02228003536DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		52EF18081FCE0046002CFE30 /* ChatUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUI.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 >>>>>>> e0f1dc6... Full connection established using segue. Going to work on private messaging and conversation list
+=======
+>>>>>>> e0f1dc6153c970b7ee8f33ca11d61d73f44614d3
 		52F11CF31FA0044700C3936E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		5A073BB0F2EB5073F36A3349 /* Pods-SpeactralChatProto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeactralChatProto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto.debug.xcconfig"; sourceTree = "<group>"; };
-		B06A0CD7C29A693F8CA284A2 /* Pods_SpeactralChatProto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeactralChatProto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F29B6DEFDD69D0E063C19A6B /* Pods_SpeactralChatProto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeactralChatProto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4DFB252BE084181527C1BFA /* Pods_SpeactralChatProto.framework in Frameworks */,
+				ABF149EF1CF737E34612B548 /* Pods_SpeactralChatProto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +89,10 @@
 
 /* Begin PBXGroup section */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> e0f1dc6153c970b7ee8f33ca11d61d73f44614d3
 		043065571FEC773B00530875 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,14 +122,18 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 >>>>>>> e0f1dc6... Full connection established using segue. Going to work on private messaging and conversation list
+=======
+>>>>>>> e0f1dc6153c970b7ee8f33ca11d61d73f44614d3
 		04A9FE6F1F9A6F90007E64D8 = {
 			isa = PBXGroup;
 			children = (
+				52D7E66E1FABF8E1003536DC /* Bridging-Header.h */,
 				04A9FE7A1F9A6F91007E64D8 /* SpeactralChatProto */,
 				04A9FE791F9A6F91007E64D8 /* Products */,
-				84123EA8409FE7A10D618A17 /* Pods */,
-				2259A8458671B91947C7A043 /* Frameworks */,
+				8823262870CD6D6A1AE8B5D4 /* Pods */,
+				F83DE14392E8D460A97CE6BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,33 +148,39 @@
 		04A9FE7A1F9A6F91007E64D8 /* SpeactralChatProto */ = {
 			isa = PBXGroup;
 			children = (
-				04A9FE7B1F9A6F91007E64D8 /* AppDelegate.swift */,
-				04A9FE7D1F9A6F91007E64D8 /* ViewController.swift */,
-				04A9FE7F1F9A6F91007E64D8 /* Main.storyboard */,
+				043065571FEC773B00530875 /* Model */,
+				043065581FEC774100530875 /* View */,
+				043065591FEC774600530875 /* Controller */,
 				04A9FE821F9A6F91007E64D8 /* Assets.xcassets */,
+				04A9FE7F1F9A6F91007E64D8 /* Main.storyboard */,
+				52727C301FBFAEBE00CD1BDA /* MessageVC.swift */,
+				04A9FE7B1F9A6F91007E64D8 /* AppDelegate.swift */,
 				04A9FE841F9A6F91007E64D8 /* LaunchScreen.storyboard */,
 				04A9FE871F9A6F91007E64D8 /* Info.plist */,
-				0411770A1FA29E69006A0901 /* GoogleService-Info.plist */,
-				04FD170C1FA3AC5200AF596F /* LoginViewController.swift */,
+				52D7E66F1FABFB4E003536DC /* Constants.swift */,
+				52D7E6751FB02228003536DC /* GoogleService-Info.plist */,
+				52D7E6731FAC62CE003536DC /* DatabaseProvider.swift */,
+				52727C2C1FBD258E00CD1BDA /* MessageDetailCell.swift */,
+				52727C2E1FBD269400CD1BDA /* MessageDetail.swift */,
 			);
 			path = SpeactralChatProto;
 			sourceTree = "<group>";
 		};
-		2259A8458671B91947C7A043 /* Frameworks */ = {
+		8823262870CD6D6A1AE8B5D4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B06A0CD7C29A693F8CA284A2 /* Pods_SpeactralChatProto.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		84123EA8409FE7A10D618A17 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5A073BB0F2EB5073F36A3349 /* Pods-SpeactralChatProto.debug.xcconfig */,
-				1725FE2B569E940722C5FE6C /* Pods-SpeactralChatProto.release.xcconfig */,
+				0AA8C3E08B96B50A453A9212 /* Pods-SpeactralChatProto.debug.xcconfig */,
+				0CEB235FF7DA4F2695FBC944 /* Pods-SpeactralChatProto.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F83DE14392E8D460A97CE6BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F29B6DEFDD69D0E063C19A6B /* Pods_SpeactralChatProto.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,12 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04A9FE8A1F9A6F91007E64D8 /* Build configuration list for PBXNativeTarget "SpeactralChatProto" */;
 			buildPhases = (
-				9920641A8260C512DC3EC239 /* [CP] Check Pods Manifest.lock */,
+				26F559181BD4EDA1C223AAF7 /* [CP] Check Pods Manifest.lock */,
 				04A9FE741F9A6F91007E64D8 /* Sources */,
 				04A9FE751F9A6F91007E64D8 /* Frameworks */,
 				04A9FE761F9A6F91007E64D8 /* Resources */,
-				24BC00EEA7DB2F3013D2F85F /* [CP] Embed Pods Frameworks */,
-				5E0591E040255B2BE020B1F1 /* [CP] Copy Pods Resources */,
+				DA71B6C123E630B4E3865352 /* [CP] Embed Pods Frameworks */,
+				39B39CAF544C0056A3B21BAB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,7 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A9FE861F9A6F91007E64D8 /* LaunchScreen.storyboard in Resources */,
-				0411770B1FA29E69006A0901 /* GoogleService-Info.plist in Resources */,
+				52D7E6761FB02228003536DC /* GoogleService-Info.plist in Resources */,
 				04A9FE831F9A6F91007E64D8 /* Assets.xcassets in Resources */,
 				04A9FE811F9A6F91007E64D8 /* Main.storyboard in Resources */,
 			);
@@ -236,52 +258,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		24BC00EEA7DB2F3013D2F85F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
-				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5E0591E040255B2BE020B1F1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9920641A8260C512DC3EC239 /* [CP] Check Pods Manifest.lock */ = {
+		26F559181BD4EDA1C223AAF7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,6 +276,59 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		39B39CAF544C0056A3B21BAB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA71B6C123E630B4E3865352 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/NMPopUpViewSwift/NMPopUpViewSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage-ProgressView/SDWebImage_ProgressView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NMPopUpViewSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage_ProgressView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -306,11 +336,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52D382771FED95AF0045C643 /* ConversationsTVC.swift in Sources */,
+				52EF18091FCE0046002CFE30 /* ChatUI.swift in Sources */,
+				52727C311FBFAEBE00CD1BDA /* MessageVC.swift in Sources */,
+				52D3827B1FED98640045C643 /* ChatsTBV.swift in Sources */,
 				04FD170D1FA3AC5200AF596F /* LoginViewController.swift in Sources */,
-				04A9FE7E1F9A6F91007E64D8 /* ViewController.swift in Sources */,
 				04A9FE7C1F9A6F91007E64D8 /* AppDelegate.swift in Sources */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> e0f1dc6153c970b7ee8f33ca11d61d73f44614d3
 				52D7E6741FAC62CE003536DC /* DatabaseProvider.swift in Sources */,
 				52727C2D1FBD258E00CD1BDA /* MessageDetailCell.swift in Sources */,
 				52A2ABEC2004363B00E0BF4B /* User.swift in Sources */,
@@ -319,7 +355,10 @@
 				0430655B1FEC781300530875 /* SignUpVC.swift in Sources */,
 				52727C2F1FBD269400CD1BDA /* MessageDetail.swift in Sources */,
 				5235970C201291DC005EEEB5 /* Message.swift in Sources */,
+<<<<<<< HEAD
 >>>>>>> e0f1dc6... Full connection established using segue. Going to work on private messaging and conversation list
+=======
+>>>>>>> e0f1dc6153c970b7ee8f33ca11d61d73f44614d3
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +494,7 @@
 		};
 		04A9FE8B1F9A6F91007E64D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A073BB0F2EB5073F36A3349 /* Pods-SpeactralChatProto.debug.xcconfig */;
+			baseConfigurationReference = 0AA8C3E08B96B50A453A9212 /* Pods-SpeactralChatProto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -465,6 +504,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SpeactralChatProto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -472,7 +512,7 @@
 		};
 		04A9FE8C1F9A6F91007E64D8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1725FE2B569E940722C5FE6C /* Pods-SpeactralChatProto.release.xcconfig */;
+			baseConfigurationReference = 0CEB235FF7DA4F2695FBC944 /* Pods-SpeactralChatProto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -482,6 +522,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SpeactralChatProto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

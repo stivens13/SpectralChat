@@ -7,7 +7,11 @@
 		<key>SpeactralChatProto.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>8</integer>
+=======
+			<integer>13</integer>
+>>>>>>> e0f1dc6153c970b7ee8f33ca11d61d73f44614d3
 		</dict>
 	</dict>
 </dict>

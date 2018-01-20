@@ -1,23 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="83a-3p-fb7">
     <device id="retina4_7" orientation="portrait">
 =======
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VYF-BC-nbs">
     <device id="retina4_0" orientation="portrait">
 >>>>>>> e0f1dc6... Full connection established using segue. Going to work on private messaging and conversation list
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VYF-BC-nbs">
+    <device id="retina4_0" orientation="portrait">
+>>>>>>> e0f1dc6153c970b7ee8f33ca11d61d73f44614d3
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
+<<<<<<< HEAD
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+=======
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+>>>>>>> e0f1dc6153c970b7ee8f33ca11d61d73f44614d3
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
-        <scene sceneID="odh-Sb-jj8">
+        <!--Sign up-->
+        <scene sceneID="36r-bB-DyB">
             <objects>
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <viewController storyboardIdentifier="Login" id="83a-3p-fb7" customClass="LoginViewController" customModule="SpeactralChatProto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WC9-fU-1xR" customClass="LoginViewController">
@@ -36,15 +46,27 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFI-uI-rQK">
                                 <rect key="frame" x="123" y="318" width="74" height="21"/>
 >>>>>>> e0f1dc6... Full connection established using segue. Going to work on private messaging and conversation list
+=======
+                <viewController storyboardIdentifier="SignUp" id="NcZ-RL-Wsc" customClass="SignUpVC" customModule="SpeactralChatProto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pxm-L9-sk3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFI-uI-rQK">
+                                <rect key="frame" x="123" y="318" width="74" height="21"/>
+>>>>>>> e0f1dc6153c970b7ee8f33ca11d61d73f44614d3
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
 <<<<<<< HEAD
+<<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lia-C0-qb2">
                                 <rect key="frame" x="32" y="97" width="79" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 =======
+=======
+>>>>>>> e0f1dc6153c970b7ee8f33ca11d61d73f44614d3
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XqY-Rb-b56">
                                 <rect key="frame" x="135" y="500" width="50" height="30"/>
                                 <state key="normal" title="SignUp"/>
@@ -66,11 +88,15 @@
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hv0-sw-PIj">
                                 <rect key="frame" x="94" y="399" width="132" height="21"/>
+<<<<<<< HEAD
 >>>>>>> e0f1dc6... Full connection established using segue. Going to work on private messaging and conversation list
+=======
+>>>>>>> e0f1dc6153c970b7ee8f33ca11d61d73f44614d3
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD
 <<<<<<< HEAD
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oYl-V9-gGv">
                                 <rect key="frame" x="32" y="126" width="315" height="30"/>
@@ -79,15 +105,22 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Fw-QP-P7o">
                                 <rect key="frame" x="20" y="430" width="280" height="30"/>
 >>>>>>> e0f1dc6... Full connection established using segue. Going to work on private messaging and conversation list
+=======
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Fw-QP-P7o">
+                                <rect key="frame" x="20" y="430" width="280" height="30"/>
+>>>>>>> e0f1dc6153c970b7ee8f33ca11d61d73f44614d3
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
+<<<<<<< HEAD
 <<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTg-v1-fdW">
                                 <rect key="frame" x="32" y="197" width="74" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 =======
+=======
+>>>>>>> e0f1dc6153c970b7ee8f33ca11d61d73f44614d3
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silicon Chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dS-Un-UUZ">
                                 <rect key="frame" x="114.5" y="75" width="91" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -96,11 +129,15 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ea-tY-246">
                                 <rect key="frame" x="119" y="156" width="82" height="21"/>
+<<<<<<< HEAD
 >>>>>>> e0f1dc6... Full connection established using segue. Going to work on private messaging and conversation list
+=======
+>>>>>>> e0f1dc6153c970b7ee8f33ca11d61d73f44614d3
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD
 <<<<<<< HEAD
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yMP-KR-hbS">
                                 <rect key="frame" x="32" y="226" width="315" height="30"/>
@@ -109,10 +146,15 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qOA-27-PjR">
                                 <rect key="frame" x="20" y="187" width="280" height="30"/>
 >>>>>>> e0f1dc6... Full connection established using segue. Going to work on private messaging and conversation list
+=======
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qOA-27-PjR">
+                                <rect key="frame" x="20" y="187" width="280" height="30"/>
+>>>>>>> e0f1dc6153c970b7ee8f33ca11d61d73f44614d3
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+<<<<<<< HEAD
 <<<<<<< HEAD
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihZ-Du-yAb">
                                 <rect key="frame" x="101" y="318" width="38" height="30"/>
@@ -132,29 +174,64 @@
                                 </connections>
                             </button>
 =======
+=======
+>>>>>>> e0f1dc6153c970b7ee8f33ca11d61d73f44614d3
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zwq-Zu-ypw">
                                 <rect key="frame" x="139.5" y="237" width="41" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD
 >>>>>>> e0f1dc6... Full connection established using segue. Going to work on private messaging and conversation list
+=======
+>>>>>>> e0f1dc6153c970b7ee8f33ca11d61d73f44614d3
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="OPS-hQ-6hw"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qOA-27-PjR" firstAttribute="top" secondItem="9ea-tY-246" secondAttribute="bottom" constant="10" id="69r-O3-vu9"/>
+                            <constraint firstItem="XqY-Rb-b56" firstAttribute="top" secondItem="6Fw-QP-P7o" secondAttribute="bottom" constant="40" id="D25-TX-X67"/>
+                            <constraint firstItem="6Fw-QP-P7o" firstAttribute="top" secondItem="Hv0-sw-PIj" secondAttribute="bottom" constant="10" id="HZc-xF-pjW"/>
+                            <constraint firstItem="qOA-27-PjR" firstAttribute="leading" secondItem="Zrn-cK-Z4b" secondAttribute="leading" constant="20" id="I8o-M5-Qpl"/>
+                            <constraint firstItem="Zrn-cK-Z4b" firstAttribute="trailing" secondItem="VAz-Ve-TtF" secondAttribute="trailing" constant="20" id="Jeb-dF-zBQ"/>
+                            <constraint firstItem="VFI-uI-rQK" firstAttribute="centerX" secondItem="pxm-L9-sk3" secondAttribute="centerX" id="Ogq-Od-Xln"/>
+                            <constraint firstItem="VFI-uI-rQK" firstAttribute="top" secondItem="VAz-Ve-TtF" secondAttribute="bottom" constant="20" id="Td9-Zb-0Fk"/>
+                            <constraint firstItem="VAz-Ve-TtF" firstAttribute="top" secondItem="Zwq-Zu-ypw" secondAttribute="bottom" constant="10" id="Xud-cZ-LqA"/>
+                            <constraint firstItem="Zwq-Zu-ypw" firstAttribute="centerX" secondItem="pxm-L9-sk3" secondAttribute="centerX" id="cpw-td-j8L"/>
+                            <constraint firstItem="0dS-Un-UUZ" firstAttribute="top" secondItem="Zrn-cK-Z4b" secondAttribute="top" constant="55" id="fKJ-F5-MTB"/>
+                            <constraint firstItem="Hv0-sw-PIj" firstAttribute="centerX" secondItem="pxm-L9-sk3" secondAttribute="centerX" id="iCd-Eh-7Pz"/>
+                            <constraint firstItem="3lK-7k-Atv" firstAttribute="leading" secondItem="Zrn-cK-Z4b" secondAttribute="leading" constant="20" id="l6f-mf-8Te"/>
+                            <constraint firstItem="Hv0-sw-PIj" firstAttribute="top" secondItem="3lK-7k-Atv" secondAttribute="bottom" constant="20" id="lK6-X9-HuY"/>
+                            <constraint firstItem="XqY-Rb-b56" firstAttribute="centerX" secondItem="pxm-L9-sk3" secondAttribute="centerX" id="mqG-DO-hlK"/>
+                            <constraint firstItem="6Fw-QP-P7o" firstAttribute="leading" secondItem="Zrn-cK-Z4b" secondAttribute="leading" constant="20" id="omv-hB-pYS"/>
+                            <constraint firstItem="Zrn-cK-Z4b" firstAttribute="trailing" secondItem="3lK-7k-Atv" secondAttribute="trailing" constant="20" id="pKG-rK-zOR"/>
+                            <constraint firstItem="9ea-tY-246" firstAttribute="centerX" secondItem="pxm-L9-sk3" secondAttribute="centerX" id="qi9-AN-BFp"/>
+                            <constraint firstItem="3lK-7k-Atv" firstAttribute="top" secondItem="VFI-uI-rQK" secondAttribute="bottom" constant="10" id="sJF-0e-Rwu"/>
+                            <constraint firstItem="Zrn-cK-Z4b" firstAttribute="trailing" secondItem="qOA-27-PjR" secondAttribute="trailing" constant="20" id="snf-aZ-Rwh"/>
+                            <constraint firstItem="0dS-Un-UUZ" firstAttribute="centerX" secondItem="pxm-L9-sk3" secondAttribute="centerX" id="tlY-6H-PCX"/>
+                            <constraint firstItem="Zwq-Zu-ypw" firstAttribute="top" secondItem="qOA-27-PjR" secondAttribute="bottom" constant="20" id="vqv-RY-5Ft"/>
+                            <constraint firstItem="Zrn-cK-Z4b" firstAttribute="trailing" secondItem="6Fw-QP-P7o" secondAttribute="trailing" constant="20" id="wjh-OE-Tvj"/>
+                            <constraint firstItem="VAz-Ve-TtF" firstAttribute="leading" secondItem="Zrn-cK-Z4b" secondAttribute="leading" constant="20" id="xDO-av-Wz5"/>
+                            <constraint firstItem="9ea-tY-246" firstAttribute="top" secondItem="0dS-Un-UUZ" secondAttribute="bottom" constant="60" id="zkI-V5-xCs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zrn-cK-Z4b"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Sign up" id="SGR-iS-z1o"/>
                     <connections>
-                        <outlet property="passwordTextField" destination="yMP-KR-hbS" id="Mf6-w8-Hqy"/>
-                        <outlet property="userNameTextField" destination="oYl-V9-gGv" id="ERY-xb-PiN"/>
+                        <outlet property="email" destination="VAz-Ve-TtF" id="ui9-l4-fex"/>
+                        <outlet property="passwordRepeatTF" destination="6Fw-QP-P7o" id="c2B-Nh-6Vu"/>
+                        <outlet property="passwordTF" destination="3lK-7k-Atv" id="fUr-7B-EIC"/>
+                        <outlet property="userName" destination="qOA-27-PjR" id="ZAr-Qf-m2F"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cuu-ma-JFn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hdv-ob-xzz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-626" y="-54"/>
+            <point key="canvasLocation" x="-772" y="252.70935960591135"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="sDv-kT-efx">
+        <!--Login-->
+        <scene sceneID="c9p-mv-qlR">
             <objects>
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <viewController storyboardIdentifier="Message" id="pta-2C-Q8S" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JyP-V2-wFP">
@@ -179,10 +256,20 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TD-z5-Ayi">
                                 <rect key="frame" x="120.5" y="176" width="79" height="21"/>
 >>>>>>> e0f1dc6... Full connection established using segue. Going to work on private messaging and conversation list
+=======
+                <viewController storyboardIdentifier="Login" id="jYK-f5-u2L" customClass="LoginViewController" customModule="SpeactralChatProto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zUa-gs-tHg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silicon Chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ne-Kz-kzo">
+                                <rect key="frame" x="114.5" y="75" width="91" height="21"/>
+>>>>>>> e0f1dc6153c970b7ee8f33ca11d61d73f44614d3
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD
 <<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Now you almost can text anyone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgQ-bE-Uwp">
                                 <rect key="frame" x="63" y="107" width="248" height="21"/>
@@ -210,12 +297,193 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8d-hy-2wA">
                                 <rect key="frame" x="123" y="257" width="74" height="21"/>
 >>>>>>> e0f1dc6... Full connection established using segue. Going to work on private messaging and conversation list
+=======
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TD-z5-Ayi">
+                                <rect key="frame" x="120.5" y="176" width="79" height="21"/>
+>>>>>>> e0f1dc6153c970b7ee8f33ca11d61d73f44614d3
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bCk-9s-aht">
+                                <rect key="frame" x="20" y="207" width="280" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gcu-pv-6a1">
+                                <rect key="frame" x="20" y="288" width="280" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dr6-N2-kYx">
+                                <rect key="frame" x="141" y="358" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginActionWith_send:" destination="jYK-f5-u2L" eventType="touchUpInside" id="IfI-uF-szB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8d-hy-2wA">
+                                <rect key="frame" x="123" y="257" width="74" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="p8d-hy-2wA" firstAttribute="centerX" secondItem="zUa-gs-tHg" secondAttribute="centerX" id="9eE-uU-fYv"/>
+                            <constraint firstItem="yda-24-3ZU" firstAttribute="trailing" secondItem="gcu-pv-6a1" secondAttribute="trailing" constant="20" id="Ek9-4A-hza"/>
+                            <constraint firstItem="3ne-Kz-kzo" firstAttribute="centerX" secondItem="zUa-gs-tHg" secondAttribute="centerX" id="FGv-z2-igH"/>
+                            <constraint firstItem="bCk-9s-aht" firstAttribute="top" secondItem="6TD-z5-Ayi" secondAttribute="bottom" constant="10" id="H5A-ap-p3b"/>
+                            <constraint firstItem="Dr6-N2-kYx" firstAttribute="top" secondItem="gcu-pv-6a1" secondAttribute="bottom" constant="40" id="KaR-XF-ydB"/>
+                            <constraint firstItem="yda-24-3ZU" firstAttribute="trailing" secondItem="bCk-9s-aht" secondAttribute="trailing" constant="20" id="RWI-zf-43e"/>
+                            <constraint firstItem="gcu-pv-6a1" firstAttribute="top" secondItem="p8d-hy-2wA" secondAttribute="bottom" constant="10" id="UTa-a0-vff"/>
+                            <constraint firstItem="6TD-z5-Ayi" firstAttribute="top" secondItem="3ne-Kz-kzo" secondAttribute="bottom" constant="80" id="dNo-4m-1IO"/>
+                            <constraint firstItem="Dr6-N2-kYx" firstAttribute="centerX" secondItem="zUa-gs-tHg" secondAttribute="centerX" id="edC-gi-TIr"/>
+                            <constraint firstItem="3ne-Kz-kzo" firstAttribute="top" secondItem="yda-24-3ZU" secondAttribute="top" constant="55" id="ghs-oS-CWv"/>
+                            <constraint firstItem="bCk-9s-aht" firstAttribute="leading" secondItem="yda-24-3ZU" secondAttribute="leading" constant="20" id="nmW-La-pfa"/>
+                            <constraint firstItem="gcu-pv-6a1" firstAttribute="leading" secondItem="yda-24-3ZU" secondAttribute="leading" constant="20" id="p00-Wx-zQp"/>
+                            <constraint firstItem="p8d-hy-2wA" firstAttribute="top" secondItem="bCk-9s-aht" secondAttribute="bottom" constant="20" id="seP-9g-4h3"/>
+                            <constraint firstItem="6TD-z5-Ayi" firstAttribute="centerX" secondItem="zUa-gs-tHg" secondAttribute="centerX" id="vNf-R4-ucX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yda-24-3ZU"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Login" id="WJT-3W-uqQ"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="gcu-pv-6a1" id="4Y0-om-9FT"/>
+                        <outlet property="userNameTextField" destination="bCk-9s-aht" id="S1K-ca-2ys"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LtS-Qz-cFI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-772" y="-500"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="7cO-nF-kC7">
+            <objects>
+                <tabBarController id="VYF-BC-nbs" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zVz-LQ-yl4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jYK-f5-u2L" kind="relationship" relationship="viewControllers" id="d4P-v4-XoU"/>
+                        <segue destination="NcZ-RL-Wsc" kind="relationship" relationship="viewControllers" id="cjf-3G-XSR"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i98-8S-Ziv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1839" y="-45"/>
+        </scene>
+        <!--ConversationsTVC-->
+        <scene sceneID="uum-DR-Xxc">
+            <objects>
+                <tableViewController storyboardIdentifier="Messages" id="Z23-7f-zKh" customClass="ConversationsTVC" customModule="SpeactralChatProto" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="g5O-tE-pYz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="5AQ-Uf-ftV">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="John" id="aiF-GX-1Q9">
+                                    <barButtonItem key="leftBarButtonItem" title="Logout" id="hPe-qe-je2">
+                                        <connections>
+                                            <action selector="logout:" destination="Z23-7f-zKh" id="egu-Tx-vpT"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem key="rightBarButtonItem" title="Item" image="new_message" id="Ocf-80-9MG">
+                                        <connections>
+                                            <action selector="newMessagePress:" destination="Z23-7f-zKh" id="Dcv-FB-4Dj"/>
+                                            <segue destination="Op4-Zb-bkZ" kind="show" identifier="toNewMessage" id="rdp-mE-zap"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="qYH-r4-Flv">
+                                <rect key="frame" x="0.0" y="72" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qYH-r4-Flv" id="uYk-AD-IVu">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Z23-7f-zKh" id="nW3-s8-fkc"/>
+                            <outlet property="delegate" destination="Z23-7f-zKh" id="SPP-rV-DKq"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="bar" destination="5AQ-Uf-ftV" id="j5L-FB-3hK"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SG7-ZO-eDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2" y="-242"/>
+        </scene>
+        <!--ChatsTBV-->
+        <scene sceneID="4QL-8g-PBI">
+            <objects>
+                <tableViewController id="Op4-Zb-bkZ" customClass="ChatsTBV" customModule="SpeactralChatProto" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="PAV-Lg-yh4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="EqA-Cu-Wzw">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="New Message" id="NwJ-KV-QeJ"/>
+                            </items>
+                        </navigationBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="cbE-vu-azl">
+                                <rect key="frame" x="0.0" y="72" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cbE-vu-azl" id="d8l-xm-FMa">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Op4-Zb-bkZ" id="Hc7-8K-LXJ"/>
+                            <outlet property="delegate" destination="Op4-Zb-bkZ" id="2Qk-GS-dra"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="rQQ-8L-ntg" kind="show" identifier="toChat" id="tMb-Pe-Bzb"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZRO-eS-AKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="793" y="-244"/>
+        </scene>
+        <!--ChatUI-->
+        <scene sceneID="eOr-hm-WwF">
+            <objects>
+                <viewController storyboardIdentifier="ChatUI" id="rQQ-8L-ntg" customClass="ChatUI" customModule="SpeactralChatProto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HUW-LJ-Ho1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WL3-dP-9LF">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="mz8-Sy-Jju"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
                         <viewLayoutGuide key="safeArea" id="EDj-g2-nYc"/>
 =======
@@ -372,15 +640,25 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="jO0-0b-5rT"/>
 >>>>>>> e0f1dc6... Full connection established using segue. Going to work on private messaging and conversation list
+=======
+                        <viewLayoutGuide key="safeArea" id="jO0-0b-5rT"/>
+>>>>>>> e0f1dc6153c970b7ee8f33ca11d61d73f44614d3
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WNW-KY-38E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OcK-Kl-XRo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
 <<<<<<< HEAD
             <point key="canvasLocation" x="139" y="-53"/>
 =======
             <point key="canvasLocation" x="1560" y="-243"/>
 >>>>>>> e0f1dc6... Full connection established using segue. Going to work on private messaging and conversation list
+=======
+            <point key="canvasLocation" x="1560" y="-243"/>
+>>>>>>> e0f1dc6153c970b7ee8f33ca11d61d73f44614d3
         </scene>
     </scenes>
+    <resources>
+        <image name="new_message" width="64" height="64"/>
+    </resources>
 </document>
