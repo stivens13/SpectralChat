@@ -15,6 +15,7 @@
 		04FD170D1FA3AC5200AF596F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FD170C1FA3AC5200AF596F /* LoginViewController.swift */; };
 		5235970820101110005EEEB5 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235970720101110005EEEB5 /* Chat.swift */; };
 		5235970C201291DC005EEEB5 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235970B201291DC005EEEB5 /* Message.swift */; };
+		524C9D8720180CF00096C0D2 /* ChatListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C9D8620180CF00096C0D2 /* ChatListCell.swift */; };
 		52727C2D1FBD258E00CD1BDA /* MessageDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52727C2C1FBD258E00CD1BDA /* MessageDetailCell.swift */; };
 		52727C2F1FBD269400CD1BDA /* MessageDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52727C2E1FBD269400CD1BDA /* MessageDetail.swift */; };
 		52727C311FBFAEBE00CD1BDA /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52727C301FBFAEBE00CD1BDA /* MessageVC.swift */; };
@@ -41,6 +42,7 @@
 		0CEB235FF7DA4F2695FBC944 /* Pods-SpeactralChatProto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeactralChatProto.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeactralChatProto/Pods-SpeactralChatProto.release.xcconfig"; sourceTree = "<group>"; };
 		5235970720101110005EEEB5 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		5235970B201291DC005EEEB5 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		524C9D8620180CF00096C0D2 /* ChatListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListCell.swift; sourceTree = "<group>"; };
 		52727C2C1FBD258E00CD1BDA /* MessageDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailCell.swift; sourceTree = "<group>"; };
 		52727C2E1FBD269400CD1BDA /* MessageDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetail.swift; sourceTree = "<group>"; };
 		52727C301FBFAEBE00CD1BDA /* MessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				52EF18081FCE0046002CFE30 /* ChatUI.swift */,
+				524C9D8620180CF00096C0D2 /* ChatListCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				524C9D8720180CF00096C0D2 /* ChatListCell.swift in Sources */,
 				52D382771FED95AF0045C643 /* ConversationsTVC.swift in Sources */,
 				52EF18091FCE0046002CFE30 /* ChatUI.swift in Sources */,
 				52727C311FBFAEBE00CD1BDA /* MessageVC.swift in Sources */,
