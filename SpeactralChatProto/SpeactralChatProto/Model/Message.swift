@@ -7,6 +7,7 @@
 //
 import Foundation
 import FirebaseDatabase.FIRDataSnapshot
+import JSQMessagesViewController.JSQMessage
 class Message {
     
     // MARK: - Properties
@@ -15,7 +16,7 @@ class Message {
 //    let content: String
 //    let timestamp: Date
 //    let sender: User
-//
+
 //    init?(snapshot: DataSnapshot) {
 //        guard let dict = snapshot.value as? [String : Any],
 //            let content = dict["content"] as? String,
@@ -33,6 +34,6 @@ class Message {
 //    init(content: String) {
 //        self.content = content
 //        self.timestamp = Date()
-//        //self.sender = User.current
-//    }
+//        self.sender = User.current
 }
+
