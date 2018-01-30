@@ -34,15 +34,15 @@ class ChatListViewController: UIViewController {
         tableView.tableFooterView = UIView()
         
         // 2
-//        userChatsHandle = UserService.observeChats { [weak self] (ref, chats) in
-//            self?.userChatsRef = ref
-//            self?.chats = chats
-//            
-//            // 3
-//            DispatchQueue.main.async {
-//                self?.tableView.reloadData()
-//            }
-//        }
+            userChatsHandle = UserService.observeChats { [weak self] (ref, chats) in
+            self?.userChatsRef = ref
+            self?.chats = chats
+            
+            // 3
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+        }
     }
     
     deinit {
