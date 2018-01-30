@@ -17,6 +17,9 @@ class ChatUI: JSQMessagesViewController{
     var messages = [JSQMessage]()
     var avatarDict = [String: JSQMessagesAvatarImage]()
     var messageRef : DatabaseReference!
+    
+    var messagesHandle: DatabaseHandle = 0
+    
     //let photoCache = NSCache()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -273,7 +276,7 @@ class ChatUI: JSQMessagesViewController{
         // Set LogIn View Controller as root view controller
         appDelegate.window?.rootViewController = LoginVC
     }
-
+   
     func sendMedia(_ picture: UIImage?, video: URL?) {
         print(picture)
         print(Storage.storage().reference())

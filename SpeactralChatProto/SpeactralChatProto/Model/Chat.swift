@@ -35,5 +35,17 @@ class Chat {
         self.lastMessage = lastMessage
         self.lastMessageSent = Date(timeIntervalSince1970: lastMessageSent)
     }
+    
+    static func hash(forMembers members: [User]) -> String {
+        guard members.count == 2 else {
+            fatalError("There must be two members to compute member hash.")
+        }
+        
+        let firstMember = members[0]
+        let secondMember = members[1]
+        
+        let memberHash = String((firstMember.uid?.hashValue)! ^ (secondMember.uid?.hashValue)!)
+        return memberHash
+    }
 }
 

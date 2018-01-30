@@ -10,14 +10,16 @@ import UIKit
 
 class ChatListCell: UITableViewCell {
     
-    @IBOutlet weak var userLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var lastMessageLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    @IBAction func dismissButtonTapped(_ sender: UIBarButtonItem) {
+        print("dismiss button tapped")
+    }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
