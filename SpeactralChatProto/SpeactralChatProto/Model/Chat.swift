@@ -18,6 +18,19 @@ class Chat {
     var lastMessage: String?
     var lastMessageSent: Date?
     
+    init(members: [User]){
+        // 1
+        assert(members.count == 2, "There must be two members in a chat.")
+        
+        // 2
+        self.title = members.reduce("") { (acc, cur) -> String in
+            return acc.isEmpty ? cur.username! : "\(acc), \(cur.username)"
+        }
+        // 3
+        self.memberHash = Chat.hash(forMembers: members)
+        // 4
+        self.memberUIDs = members.map { $0.uid! }
+    }
     init?(snapshot: DataSnapshot) {
         guard !snapshot.key.isEmpty,
             let dict = snapshot.value as? [String : Any],

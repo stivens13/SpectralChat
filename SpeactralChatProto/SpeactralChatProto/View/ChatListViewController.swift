@@ -53,7 +53,7 @@ class ChatListViewController: UIViewController {
     @IBAction func dismissButtonTapped(_ sender: UIBarButtonItem) {
         navigationController?.dismiss(animated: true)
     }
-
+   
     /*
     // MARK: - Navigation
 

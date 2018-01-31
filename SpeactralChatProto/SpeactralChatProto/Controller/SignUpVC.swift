@@ -51,6 +51,8 @@ class SignUpVC: UIViewController {
                     guard let uid = user?.uid else {
                         return
                     }
+                    let user = User(uid: (Auth.auth().currentUser?.uid)!,username: (Auth.auth().currentUser?.email)!)
+                    User.setCurrent(user)
                     let ref = Database.database().reference(fromURL: "https://ios-spectral.firebaseio.com/")
                     
                     let values = ["email": email,

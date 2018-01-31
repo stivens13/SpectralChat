@@ -61,6 +61,7 @@ struct ChatService {
             completion(chat)
         }
     }
+    //check whether the chat exists or not
     static func checkForExistingChat(with user: User, completion: @escaping (Chat?) -> Void) {
         // 1
         let members = [user, User.current]
