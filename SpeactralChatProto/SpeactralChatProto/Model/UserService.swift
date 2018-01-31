@@ -12,7 +12,7 @@ import FirebaseDatabase
 import FirebaseDatabase.FIRDataSnapshot
 struct UserService {
     static func observeChats(for user: User = User.current, withCompletion completion: @escaping (DatabaseReference, [Chat]) -> Void) -> DatabaseHandle {
-        let ref = Database.database().reference().child("chats").child(user.uid)
+        let ref = Database.database().reference().child("chats").child(user.uid!)
         
         return ref.observe(.value, with: { (snapshot) in
             guard let snapshot = snapshot.children.allObjects as? [DataSnapshot] else {

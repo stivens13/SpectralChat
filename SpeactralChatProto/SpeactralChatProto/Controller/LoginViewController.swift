@@ -9,6 +9,7 @@
 import UIKit
 import Foundation
 import Firebase
+import FirebaseAuthUI
 import FirebaseAuth
 import JSQMessagesViewController
 
@@ -16,6 +17,7 @@ class LoginViewController:UIViewController {
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,7 +43,10 @@ class LoginViewController:UIViewController {
             Auth.auth().signIn(withEmail: userNameTextField.text!, password: passwordTextField.text!) {
                 (user,error) in
                 if error == nil {
+                    
                     print("Login Successful")
+                    let user = User(uid: (Auth.auth().currentUser?.uid)!,username: (Auth.auth().currentUser?.email)!)
+                    User.setCurrent(user)
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "Messages")
                     self.present(vc!,animated:true, completion: nil)
                 } else {

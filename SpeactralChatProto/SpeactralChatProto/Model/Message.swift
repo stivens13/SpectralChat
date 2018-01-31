@@ -19,7 +19,7 @@ class Message: NSObject {
                           text: self.content)
     }()
     var key: String?
-    let content: String
+    let content: String?
     var timestamp: Date
     let sender: User
     
