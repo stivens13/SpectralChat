@@ -319,14 +319,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" textLabel="f1m-pr-Y8U" style="IBUITableViewCellStyleDefault" id="HAC-Ha-Ick" customClass="NewChatUserCell" customModule="SpeactralChatProto" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="NewChatUserCell" textLabel="Ky2-gx-GGP" style="IBUITableViewCellStyleDefault" id="L9A-0E-Uue" customClass="NewChatUserCell" customModule="SpeactralChatProto" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HAC-Ha-Ick" id="Pz5-sY-u5G">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="L9A-0E-Uue" id="PNm-so-aQs">
                                             <rect key="frame" x="0.0" y="0.0" width="281" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f1m-pr-Y8U">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ky2-gx-GGP">
                                                     <rect key="frame" x="15" y="0.0" width="266" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -335,6 +335,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="NewChatUserCell"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -344,7 +345,7 @@
                     </view>
                     <connections>
                         <outlet property="nextButton" destination="mJr-ZE-BAU" id="z3d-1m-o0O"/>
-                        <outlet property="tableView" destination="xg6-JD-HcW" id="a2c-T6-paC"/>
+                        <outlet property="tableView" destination="xg6-JD-HcW" id="Lnr-kO-vjN"/>
                         <segue destination="rQQ-8L-ntg" kind="show" identifier="toChat" id="FVT-vm-Qz4"/>
                         <segue destination="UPc-Lc-Yrz" kind="show" identifier="toMessage" id="4ta-ql-lkv"/>
                     </connections>

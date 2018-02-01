@@ -40,3 +40,7 @@ class User: NSObject {
     }
     
 }
+
+extension User {
+   
+}

@@ -10,8 +10,11 @@ import Foundation
 
 class NewChatUserCell: UITableViewCell {
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+
+    
 }
 

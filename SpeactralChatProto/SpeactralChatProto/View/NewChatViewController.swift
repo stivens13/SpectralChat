@@ -27,20 +27,23 @@ class NewChatViewController: UIViewController {
        
     }
     func retrieveUser() {
-        let rootRef = Database.database().reference()
+        let rootRef = Database.database().reference(fromURL: "https://ios-spectral.firebaseio.com/")
         let query = rootRef.child("users").queryOrdered(byChild: "name")
         query.observe(.value) { (snapshot) in
             for child in snapshot.children.allObjects as! [DataSnapshot] {
                 if let value = child.value as? NSDictionary {
-                    let user = User(uid: , username:)
+                    let user = User(uid: child.key, username: value["email"] as! String)
                     let name = value["name"] as? String ?? "Name not found"
                     let email = value["email"] as? String ?? "Email not found"
                     user.name = name
                     user.email = email
+                    //testing whether following is appended
+                    
                     self.following.append(user)
                     DispatchQueue.main.async {
                         self.tableView.reloadData()
                     }
+                    print(self.following[0].username!)
                 }
             }
         }
@@ -93,7 +96,6 @@ extension NewChatViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NewChatUserCell") as! NewChatUserCell
         configureCell(cell, at: indexPath)
-        
         return cell
     }
     
