@@ -43,14 +43,18 @@ class ChatViewController: JSQMessagesViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.senderId = User.current.uid
         self.senderDisplayName = User.current.name
+        
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.senderId = User.current.uid
         self.senderDisplayName = User.current.name
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.senderId = User.current.uid
+        self.senderDisplayName = User.current.name
         setupJSQMessagesViewController()
         tryObservingMessages()
     }
@@ -88,15 +92,15 @@ class ChatViewController: JSQMessagesViewController {
     }
     
     func tryObservingMessages() {
+        chat.key = chat.memberHash
         guard let chatKey = chat?.key else { return }
-        
         messagesHandle = ChatService.observeMessages(forChatKey: chatKey, completion: { [weak self] (ref, message) in
             self?.messagesRef = ref
             
             if let message = message {
                 self?.messages.append(message)
                 self?.finishReceivingMessage()
-            }
+            } 
         })
     }
 }
@@ -137,6 +141,7 @@ extension ChatViewController {
         
         return cell
     }
+    
 }
 extension ChatViewController {
     func sendMessage(_ message: Message) {

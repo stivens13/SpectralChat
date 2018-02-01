@@ -9,7 +9,7 @@ import Foundation
 import FirebaseDatabase.FIRDataSnapshot
 import Firebase
 import JSQMessagesViewController.JSQMessage
-class Message: NSObject {
+class Message {
     
     // MARK: - Properties
     lazy var jsqMessageValue: JSQMessage = {
@@ -57,19 +57,7 @@ class Message: NSObject {
         self.timestamp = Date()
         self.sender = User.current
     }
-//    init(dictionary: [String: AnyObject]) {
-//
-//        fromId = dictionary["fromId"] as? String
-//        text = dictionary["text"] as? String
-//        timestamp = (dictionary["timestamp"] as? Date)!
-//        toId = dictionary["toId"] as? String
-//
-//        imageUrl = dictionary["imageUrl"] as? String
-//        imageHeight = dictionary["imageHeight"] as? NSNumber
-//        imageWidth = dictionary["imageWidth"] as? NSNumber
-//
-//        videoUrl = dictionary["videoUrl"] as? String
-//    }
+
     
     var dictValue: [String : Any] {
         let userDict = ["username" : sender.username,
