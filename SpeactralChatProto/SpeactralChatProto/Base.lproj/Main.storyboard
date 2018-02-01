@@ -235,6 +235,7 @@
                                         <barButtonItem key="rightBarButtonItem" title="Item" image="new_message" id="gkA-Vl-W0y">
                                             <connections>
                                                 <action selector="button:" destination="UPc-Lc-Yrz" id="4Nx-SE-59k"/>
+                                                <segue destination="Rhl-4Z-pIk" kind="show" identifier="newMessage" id="UM0-nP-lfS"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -281,7 +282,6 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="sEU-NR-Ehy" id="j1D-52-hje"/>
-                        <segue destination="WpF-Yj-RCb" kind="show" identifier="newMessage" id="1Dv-Ik-Ul2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l2p-21-RD6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -289,44 +289,26 @@
             <point key="canvasLocation" x="-86" y="-244"/>
         </scene>
         <!--New Chat View Controller-->
-        <scene sceneID="X2e-6H-FOW">
+        <scene sceneID="Ufi-Zi-NTb">
             <objects>
-                <viewController id="WpF-Yj-RCb" customClass="NewChatViewController" customModule="SpeactralChatProto" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fdX-Wq-OAU">
+                <viewController id="Rhl-4Z-pIk" customClass="NewChatViewController" customModule="SpeactralChatProto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4gb-Gf-NnU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SjC-nK-EDp">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="New Message" id="8T1-TG-tnf">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="JfN-38-uPM">
-                                            <connections>
-                                                <action selector="backButton:" destination="WpF-Yj-RCb" id="4LA-Bc-bVX"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Next" id="mJr-ZE-BAU">
-                                            <connections>
-                                                <action selector="nextButtonTapped:" destination="WpF-Yj-RCb" id="gCy-FD-rsr"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xg6-JD-HcW">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TIr-CE-Lf3">
                                 <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="NewChatUserCell" textLabel="Ky2-gx-GGP" style="IBUITableViewCellStyleDefault" id="L9A-0E-Uue" customClass="NewChatUserCell" customModule="SpeactralChatProto" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="NewChatUserCell" textLabel="ALg-W1-G6s" style="IBUITableViewCellStyleDefault" id="K62-IK-ymr" customClass="NewChatUserCell" customModule="SpeactralChatProto" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="L9A-0E-Uue" id="PNm-so-aQs">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="K62-IK-ymr" id="8f6-QX-c0k">
                                             <rect key="frame" x="0.0" y="0.0" width="281" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ky2-gx-GGP">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ALg-W1-G6s">
                                                     <rect key="frame" x="15" y="0.0" width="266" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -339,20 +321,39 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dlj-WE-1kJ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="New Message" id="SdY-Lr-X60">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="TdW-ZF-zY6">
+                                            <connections>
+                                                <action selector="backButton:" destination="Rhl-4Z-pIk" id="pmS-8n-7bA"/>
+                                                <segue destination="UPc-Lc-Yrz" kind="show" identifier="toMessage" id="fXx-sp-fXA"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Next" id="uLN-wu-5Ys">
+                                            <connections>
+                                                <action selector="nextButtonTapped:" destination="Rhl-4Z-pIk" id="mk5-xd-zbR"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="cSn-OS-9jt"/>
+                        <viewLayoutGuide key="safeArea" id="y6a-ID-iAO"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="nextButton" destination="mJr-ZE-BAU" id="z3d-1m-o0O"/>
-                        <outlet property="tableView" destination="xg6-JD-HcW" id="Lnr-kO-vjN"/>
-                        <segue destination="rQQ-8L-ntg" kind="show" identifier="toChat" id="FVT-vm-Qz4"/>
-                        <segue destination="UPc-Lc-Yrz" kind="show" identifier="toMessage" id="4ta-ql-lkv"/>
+                        <outlet property="nextButton" destination="uLN-wu-5Ys" id="WU5-pm-y0Q"/>
+                        <outlet property="tableView" destination="TIr-CE-Lf3" id="kCi-NL-VpI"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="O4N-cz-3rB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ph-16-do3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="698" y="-244"/>
+            <point key="canvasLocation" x="810" y="-244.01408450704227"/>
         </scene>
         <!--Chat View Controller-->
         <scene sceneID="eOr-hm-WwF">
@@ -376,13 +377,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OcK-Kl-XRo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1401" y="-243"/>
+            <point key="canvasLocation" x="1592" y="-244"/>
         </scene>
     </scenes>
     <resources>
         <image name="new_message" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4ta-ql-lkv"/>
+        <segue reference="fXx-sp-fXA"/>
     </inferredMetricsTieBreakers>
 </document>

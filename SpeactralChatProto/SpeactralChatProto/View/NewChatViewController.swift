@@ -8,15 +8,24 @@
 
 import UIKit
 import FirebaseDatabase
-class NewChatViewController: UIViewController {
 
+class NewChatViewController: UIViewController,UITableViewDelegate,UITableViewDataSource  {
+    
+    
     @IBOutlet weak var nextButton: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
+    
+    
+    
+    let cellId = "cellId"
+    
+    
     var following = [User]()
     var selectedUser: User?
     var existingChat: Chat?
+
     // MARK: - VC Lifecycle
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         nextButton.isEnabled = false
@@ -24,7 +33,9 @@ class NewChatViewController: UIViewController {
         tableView.tableFooterView = UIView()
         
         retrieveUser()
-       
+        tableView.delegate = self
+        tableView.dataSource = self
+        
     }
     func retrieveUser() {
         let rootRef = Database.database().reference(fromURL: "https://ios-spectral.firebaseio.com/")
@@ -38,14 +49,16 @@ class NewChatViewController: UIViewController {
                     user.name = name
                     user.email = email
                     //testing whether following is appended
-                    
+
                     self.following.append(user)
                     DispatchQueue.main.async {
                         self.tableView.reloadData()
                     }
-                    print(self.following[0].username!)
+
+                    
                 }
             }
+
         }
     }
     @IBAction func backButton(_ sender: Any) {
@@ -54,7 +67,7 @@ class NewChatViewController: UIViewController {
     @IBAction func nextButtonTapped(_ sender: UIBarButtonItem) {
         // 1
         guard let selectedUser = selectedUser else { return }
-        
+
         // 2
         sender.isEnabled = false
         // 3
@@ -62,55 +75,19 @@ class NewChatViewController: UIViewController {
             // 4
             sender.isEnabled = true
             self.existingChat = chat
-            
+
             self.performSegue(withIdentifier: "toChat", sender: self)
         }
     }
-    
+
     // MARK: - IBActions
-    
-    
+
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
-
-extension NewChatViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return following.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "NewChatUserCell") as! NewChatUserCell
-        configureCell(cell, at: indexPath)
-        return cell
-    }
-    
-    func configureCell(_ cell: NewChatUserCell, at indexPath: IndexPath) {
-        let follower = following[indexPath.row]
-        cell.textLabel?.text = follower.username
-        
-        if let selectedUser = selectedUser, selectedUser.uid == follower.uid {
-            cell.accessoryType = .checkmark
-        } else {
-            cell.accessoryType = .none
-        }
-    }
-}
-extension NewChatViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // 1
         guard let cell = tableView.cellForRow(at: indexPath) else { return }
@@ -130,12 +107,48 @@ extension NewChatViewController: UITableViewDelegate {
         // 5
         cell.accessoryType = .none
     }
+    //number of cells
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.following.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NewChatUserCell") as! NewChatUserCell
+        configureCell(cell, at: indexPath)
+        return cell
+    }
+    
+    func configureCell(_ cell: NewChatUserCell, at indexPath: IndexPath) {
+        let follower = following[indexPath.row]
+        cell.textLabel?.text = follower.username
+        
+        if let selectedUser = selectedUser, selectedUser.uid == follower.uid {
+            cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
+        }
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 72
+    }
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }
+
+
 
 extension NewChatViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
-        
+
         if segue.identifier == "toChat", let destination = segue.destination as? ChatViewController, let selectedUser = selectedUser {
             let members = [selectedUser, User.current]
             destination.chat = existingChat ?? Chat(members: members)
