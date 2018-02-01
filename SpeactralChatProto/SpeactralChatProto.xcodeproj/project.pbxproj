@@ -97,11 +97,11 @@
 		043065581FEC774100530875 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				524C9D8620180CF00096C0D2 /* ChatListCell.swift */,
 				526DFA7F201DBEAC00A23C06 /* ChatViewController.swift */,
 				52544DE2202113F0007E4348 /* ChatListViewController.swift */,
 				52544DE620214D98007E4348 /* NewChatViewController.swift */,
-				52544DE820214E01007E4348 /* NewChatUserCell.swift */,
+				04FD170C1FA3AC5200AF596F /* LoginViewController.swift */,
+				0430655A1FEC781300530875 /* SignUpVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -109,8 +109,8 @@
 		043065591FEC774600530875 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				04FD170C1FA3AC5200AF596F /* LoginViewController.swift */,
-				0430655A1FEC781300530875 /* SignUpVC.swift */,
+				52544DE820214E01007E4348 /* NewChatUserCell.swift */,
+				524C9D8620180CF00096C0D2 /* ChatListCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
