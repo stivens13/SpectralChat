@@ -40,12 +40,22 @@ class ChatViewController: JSQMessagesViewController {
         let color = UIColor.jsq_messageBubbleLightGray()
         return bubbleImageFactory.incomingMessagesBubbleImage(with: color)
     }()
-
+    override func viewWillAppear(_ animated: Bool) {
+        self.senderId = User.current.uid
+        self.senderDisplayName = User.current.name
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.senderId = User.current.uid
+        self.senderDisplayName = User.current.name
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         setupJSQMessagesViewController()
         tryObservingMessages()
     }
+    
+    
     
     deinit {
         messagesRef?.removeObserver(withHandle: messagesHandle)

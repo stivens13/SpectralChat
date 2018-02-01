@@ -335,6 +335,7 @@
                                         <barButtonItem key="rightBarButtonItem" title="Next" id="uLN-wu-5Ys">
                                             <connections>
                                                 <action selector="nextButtonTapped:" destination="Rhl-4Z-pIk" id="mk5-xd-zbR"/>
+                                                <segue destination="rQQ-8L-ntg" kind="show" identifier="toChat" id="Qjm-Wf-BD4"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
