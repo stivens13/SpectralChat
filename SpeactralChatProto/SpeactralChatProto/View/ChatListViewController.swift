@@ -22,6 +22,11 @@ class ChatListViewController: UIViewController {
     
     // MARK: - Subviews
     
+   
+    
+    @IBAction func button(_ sender: Any) {
+        performSegue(withIdentifier: "newMessage", sender: self)
+    }
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - VC Lifecycle

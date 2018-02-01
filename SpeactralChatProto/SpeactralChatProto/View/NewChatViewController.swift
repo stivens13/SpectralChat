@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import FirebaseDatabase
 class NewChatViewController: UIViewController {
 
     @IBOutlet weak var nextButton: UIBarButtonItem!
@@ -23,7 +23,30 @@ class NewChatViewController: UIViewController {
         // remove separators for empty cells
         tableView.tableFooterView = UIView()
         
+        retrieveUser()
        
+    }
+    func retrieveUser() {
+        let rootRef = Database.database().reference()
+        let query = rootRef.child("users").queryOrdered(byChild: "name")
+        query.observe(.value) { (snapshot) in
+            for child in snapshot.children.allObjects as! [DataSnapshot] {
+                if let value = child.value as? NSDictionary {
+                    let user = User(uid: , username:)
+                    let name = value["name"] as? String ?? "Name not found"
+                    let email = value["email"] as? String ?? "Email not found"
+                    user.name = name
+                    user.email = email
+                    self.following.append(user)
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                    }
+                }
+            }
+        }
+    }
+    @IBAction func backButton(_ sender: Any) {
+        performSegue(withIdentifier: "toMessage", sender: self)
     }
     @IBAction func nextButtonTapped(_ sender: UIBarButtonItem) {
         // 1
