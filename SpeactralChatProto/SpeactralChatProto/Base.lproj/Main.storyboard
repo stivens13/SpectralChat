@@ -246,7 +246,7 @@
         <!--Chat List View Controller-->
         <scene sceneID="nwD-BM-ApS">
             <objects>
-                <viewController storyboardIdentifier="Messages" id="UPc-Lc-Yrz" customClass="ChatListViewController" customModule="SpeactralChatProto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OldMessages" id="UPc-Lc-Yrz" customClass="ChatListViewController" customModule="SpeactralChatProto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z21-zh-1wo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -320,7 +320,7 @@
         <!--New Chat View Controller-->
         <scene sceneID="Ufi-Zi-NTb">
             <objects>
-                <viewController id="Rhl-4Z-pIk" customClass="NewChatViewController" customModule="SpeactralChatProto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Messages" id="Rhl-4Z-pIk" customClass="NewChatViewController" customModule="SpeactralChatProto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4gb-Gf-NnU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -355,12 +355,12 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="New Message" id="SdY-Lr-X60">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="TdW-ZF-zY6">
+                                        <barButtonItem key="leftBarButtonItem" title="Logout" id="TdW-ZF-zY6">
                                             <connections>
                                                 <action selector="backButton:" destination="Rhl-4Z-pIk" id="pmS-8n-7bA"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Next" id="uLN-wu-5Ys">
+                                        <barButtonItem key="rightBarButtonItem" title="Next" image="new_message" id="uLN-wu-5Ys">
                                             <connections>
                                                 <action selector="nextButtonTapped:" destination="Rhl-4Z-pIk" id="mk5-xd-zbR"/>
                                                 <segue destination="rQQ-8L-ntg" kind="show" identifier="toChat" id="Qjm-Wf-BD4"/>

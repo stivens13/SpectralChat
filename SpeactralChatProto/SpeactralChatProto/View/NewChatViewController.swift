@@ -54,11 +54,8 @@ class NewChatViewController: UIViewController,UITableViewDelegate,UITableViewDat
                     DispatchQueue.main.async {
                         self.tableView.reloadData()
                     }
-
-                    
                 }
             }
-
         }
     }
     @IBAction func backButton(_ sender: Any) {
