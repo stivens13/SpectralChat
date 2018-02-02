@@ -13,6 +13,10 @@ import FirebaseDatabase
 
 class ChatViewController: JSQMessagesViewController {
     
+    @IBAction func backButtonPressed(_ sender: Any) {
+        
+        dismiss(animated: true, completion: nil)
+    }
     var messagesHandle: DatabaseHandle = 0
     var messagesRef: DatabaseReference?
     var messages = [Message]()
