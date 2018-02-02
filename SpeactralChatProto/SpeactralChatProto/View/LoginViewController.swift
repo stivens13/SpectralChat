@@ -13,13 +13,16 @@ import FirebaseAuthUI
 import FirebaseAuth
 import JSQMessagesViewController
 
-class LoginViewController:UIViewController {
+class LoginViewController:UIViewController, UITextFieldDelegate {
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        userNameTextField.delegate = self
+        passwordTextField.delegate = self
         
         // Do any additional setup after loading the view.
     }
@@ -28,6 +31,9 @@ class LoginViewController:UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    
     
     @IBAction func loginAction(_send: AnyObject) {
         //check if it is empty
@@ -59,8 +65,27 @@ class LoginViewController:UIViewController {
             }
             
         }
+        
+        
     }
     
+    // Handling keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == userNameTextField {
+            passwordTextField.becomeFirstResponder()
+        } else if textField == passwordTextField {
+            textField.resignFirstResponder()
+        }
+        
+        return true
+    }
+    
+}
+
 //    @IBAction func pressed(_send: UIButton) {
 //        //check if it is empty
 //        if userNameTextField.text == "" && passwordTextField.text == "" {
@@ -106,15 +131,11 @@ class LoginViewController:UIViewController {
 //
 //        }
 //    }
-    
-    //check whether the user is logged in
+
+//check whether the user is logged in
 //    func isLoggedIn() -> Bool {
 //        if Auth.auth().currentUser != nil {
 //            return true;
 //        }
 //        return false;
 //    }
-    
-    
-}
-
