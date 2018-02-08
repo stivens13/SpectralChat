@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseDatabase
 
-class ChatListViewController: UIViewController {
+class ChatListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var chats = [Chat]()
     
@@ -58,19 +58,6 @@ class ChatListViewController: UIViewController {
     @IBAction func dismissButtonTapped(_ sender: UIBarButtonItem) {
         navigationController?.dismiss(animated: true)
     }
-   
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
-extension ChatListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return chats.count
     }
@@ -84,13 +71,22 @@ extension ChatListViewController: UITableViewDataSource {
         
         return cell
     }
-}
-
-extension ChatListViewController: UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "toChat", sender: self)
     }
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }
+
 
 // MARK: - Navigation
 
