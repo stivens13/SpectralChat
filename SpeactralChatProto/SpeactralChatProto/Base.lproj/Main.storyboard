@@ -355,7 +355,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="New Message" id="SdY-Lr-X60">
-                                        <barButtonItem key="leftBarButtonItem" title="Logout" id="TdW-ZF-zY6">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="TdW-ZF-zY6">
                                             <connections>
                                                 <action selector="backButton:" destination="Rhl-4Z-pIk" id="pmS-8n-7bA"/>
                                             </connections>
