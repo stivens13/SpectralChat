@@ -54,15 +54,13 @@ class NewChatViewController: UIViewController,UITableViewDelegate,UITableViewDat
                     DispatchQueue.main.async {
                         self.tableView.reloadData()
                     }
-
-                    
                 }
             }
-
         }
     }
     @IBAction func backButton(_ sender: Any) {
-        performSegue(withIdentifier: "toMessage", sender: self)
+//        performSegue(withIdentifier: "toMessage", sender: self)
+        dismiss(animated: true, completion: nil)
     }
     @IBAction func nextButtonTapped(_ sender: UIBarButtonItem) {
         // 1

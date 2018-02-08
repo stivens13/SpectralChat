@@ -11,7 +11,7 @@ import Firebase
 import FirebaseAuth
 import SwiftKeychainWrapper
 
-class SignUpVC: UIViewController {
+class SignUpVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var email: UITextField!
@@ -22,7 +22,30 @@ class SignUpVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        userName.delegate = self
+        email.delegate = self
+        passwordTF.delegate = self
+        passwordRepeatTF.delegate = self
         // Do any additional setup after loading the view.
+    }
+    
+    // Handling keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == userName {
+            email.becomeFirstResponder()
+        } else if textField == email {
+            passwordTF.becomeFirstResponder()
+        } else if textField == passwordTF {
+            passwordRepeatTF.becomeFirstResponder()
+        } else if textField == passwordRepeatTF {
+            textField.resignFirstResponder()
+        }
+        
+        return true
     }
     
     @IBAction func signUp(_ sender: Any) {
@@ -79,6 +102,8 @@ class SignUpVC: UIViewController {
             }
             
         }
+        
+        
         
         
         

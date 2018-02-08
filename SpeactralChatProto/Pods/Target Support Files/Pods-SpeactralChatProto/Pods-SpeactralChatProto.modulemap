@@ -1,6 +1,0 @@
-framework module Pods_SpeactralChatProto {
-  umbrella header "Pods-SpeactralChatProto-umbrella.h"
-
-  export *
-  module * { export * }
-}
