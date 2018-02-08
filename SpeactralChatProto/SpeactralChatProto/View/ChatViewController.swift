@@ -34,7 +34,24 @@ class ChatViewController: JSQMessagesViewController {
         
         // Create a navigation item with a title
         let navigationItem = UINavigationItem()
-        navigationItem.title = "NavBarAppears!"
+        
+        let id = chat.memberUIDs[0]
+        let databaseRef = Database.database().reference().child("users").child(id)
+        databaseRef.observe(.value, with: { (snapshot) in
+            
+            if !snapshot.exists() { return }
+            
+            //print(snapshot) // Its print all values including Snap (User)
+            
+            //print(snapshot.value!)
+            
+            navigationItem.title = String(describing: snapshot.childSnapshot(forPath: "name").value!)
+            
+            //print(username!)
+            
+            
+        })
+//        navigationItem.title = "NavBarAppears!"
         
         // Create left and right button for navigation item
         let leftButton =  UIBarButtonItem(title: "Back", style:   .plain, target: self, action: #selector(btn_clicked(_:)))
