@@ -9,7 +9,6 @@
 import UIKit
 import Foundation
 import Firebase
-import FirebaseAuthUI
 import FirebaseAuth
 import JSQMessagesViewController
 
