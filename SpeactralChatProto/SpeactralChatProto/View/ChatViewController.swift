@@ -23,6 +23,7 @@ class ChatViewController: JSQMessagesViewController {
     @IBAction func dismissButtonTapped(_ sender: UIBarButtonItem) {
          navigationController?.popToRootViewController(animated: true)
     }
+    
     var outgoingBubbleImageView: JSQMessagesBubbleImage = {
         guard let bubbleImageFactory = JSQMessagesBubbleImageFactory() else {
             fatalError("Error creating bubble image factory.")
@@ -40,6 +41,39 @@ class ChatViewController: JSQMessagesViewController {
         let color = UIColor.jsq_messageBubbleLightGray()
         return bubbleImageFactory.incomingMessagesBubbleImage(with: color)
     }()
+    func addNavBar() {
+        let navigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height:54)) // Offset by 20 pixels vertically to take the status bar into account
+        
+        navigationBar.barTintColor = UIColor.lightGray
+        navigationBar.tintColor = UIColor.black
+        
+        navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.black]
+        
+        // Create a navigation item with a title
+        let navigationItem = UINavigationItem()
+        navigationItem.title = "NavBarAppears!"
+        
+        // Create left and right button for navigation item
+        let leftButton =  UIBarButtonItem(title: "Back", style:   .plain, target: self, action: #selector(btn_clicked(_:)))
+        
+        //        let rightButton = UIBarButtonItem(title: "Right", style: .plain, target: self, action: nil)
+        
+        // Create two buttons for the navigation item
+        navigationItem.leftBarButtonItem = leftButton
+        //        navigationItem.rightBarButtonItem = rightButton
+        
+        // Assign the navigation item to the navigation bar
+        navigationBar.items = [navigationItem]
+        
+        // Make the navigation bar a subview of the current view controller
+        self.view.addSubview(navigationBar)
+    }
+    
+    @objc func btn_clicked(_ sender: UIBarButtonItem) {
+        // Do something
+        //        performSegue(withIdentifier: "segueBackToHomeVC", sender: self)
+        dismiss(animated: true, completion: nil)
+    }
     override func viewWillAppear(_ animated: Bool) {
         self.senderId = User.current.uid
         self.senderDisplayName = User.current.name
@@ -55,6 +89,7 @@ class ChatViewController: JSQMessagesViewController {
         super.viewDidLoad()
         self.senderId = User.current.uid
         self.senderDisplayName = User.current.name
+        addNavBar()
         setupJSQMessagesViewController()
         tryObservingMessages()
     }
@@ -103,6 +138,7 @@ class ChatViewController: JSQMessagesViewController {
             } 
         })
     }
+    
 }
 
 extension ChatViewController {
