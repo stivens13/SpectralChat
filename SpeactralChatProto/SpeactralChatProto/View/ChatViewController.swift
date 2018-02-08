@@ -51,7 +51,9 @@ class ChatViewController: JSQMessagesViewController {
         
         // Create a navigation item with a title
         let navigationItem = UINavigationItem()
-        navigationItem.title = "NavBarAppears!"
+        //get id and now compute
+        findUserWithId(chat.memberUIDs[0])
+        navigationItem.title = "Hello"
         
         // Create left and right button for navigation item
         let leftButton =  UIBarButtonItem(title: "Back", style:   .plain, target: self, action: #selector(btn_clicked(_:)))
@@ -68,7 +70,25 @@ class ChatViewController: JSQMessagesViewController {
         // Make the navigation bar a subview of the current view controller
         self.view.addSubview(navigationBar)
     }
-    
+    func findUserWithId(_ id: String)  {
+        var username: Any?
+        let databaseRef = Database.database().reference().child("users").child(id)
+        databaseRef.observe(.value, with: { (snapshot) in
+            
+            if !snapshot.exists() { return }
+            
+            //print(snapshot) // Its print all values including Snap (User)
+            
+            //print(snapshot.value!)
+            
+            let username1 = snapshot.childSnapshot(forPath: "name").value!
+            username = username1
+            print(username!)
+        })
+        
+        
+        
+    }
     @objc func btn_clicked(_ sender: UIBarButtonItem) {
         // Do something
         //        performSegue(withIdentifier: "segueBackToHomeVC", sender: self)
